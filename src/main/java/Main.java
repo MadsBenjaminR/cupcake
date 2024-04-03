@@ -5,6 +5,6 @@ public class Main {
         System.out.println("hej");
 
 
-        System.out.println("Mac er bare bedre");
+        System.out.println("Mac vil altid være bedre");
     }
 }
