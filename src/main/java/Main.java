@@ -1,10 +1,7 @@
 package app;
 
 import app.config.ThymeleafConfig;
-import app.controllers.TimeZonesController;
 import app.controllers.UserController;
-import app.controllers.WardrobeCategoryController;
-import app.controllers.WardrobeItemController;
 import app.persistence.ConnectionPool;
 import io.javalin.Javalin;
 import io.javalin.rendering.template.JavalinThymeleaf;
@@ -30,6 +27,7 @@ public class Main
         // Routing
 
         app.get("/", ctx -> ctx.render("index.html"));
+        UserController.addRoutes(app,connectionPool);
 
     }
 }
