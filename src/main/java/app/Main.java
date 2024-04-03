@@ -1,11 +1,9 @@
 package app;
 
 import app.config.ThymeleafConfig;
-import app.controllers.TimeZonesController;
-import app.controllers.UserController;
-import app.controllers.WardrobeCategoryController;
-import app.controllers.WardrobeItemController;
+import app.controllers.CreditController;
 import app.persistence.ConnectionPool;
+import app.persistence.CreditMapper;
 import io.javalin.Javalin;
 import io.javalin.rendering.template.JavalinThymeleaf;
 
@@ -29,7 +27,8 @@ public class Main
 
         // Routing
 
-        app.get("/", ctx -> ctx.render("index.html"));
+        app.get("/", ctx -> ctx.render("admin.html"));
+        CreditController.addRoutes(app, connectionPool);
 
     }
 }
