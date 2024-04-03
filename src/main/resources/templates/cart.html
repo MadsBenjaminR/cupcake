@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>cart</title>
+</head>
+<body>
+
+<div class="email">
+    <header>
+    <span th:text="${session.currentUser.email}"> </span>
+    </header>
+</div>
+
+
+<form class="table" id="table-styling" method="post">
+    <table class="task-table">
+        <thead>
+        <tr>
+            <th>Bottom</th>
+            <th>Top</th>
+            <th>Amount</th>
+            <th>price</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="item: ${session.itemList}">
+            <td th:text="${item.bottom}"></td>
+            <td th:text="${item.top}"></td>
+            <td th:text="${item.amount}"></td>
+            <td th:text="${item.price}"></td>
+            <td>
+                <button type="submit" name="orderline_id" th:value="${item.itemId}" formaction="/deleteitem">Delete
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>
