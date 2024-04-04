@@ -30,8 +30,8 @@ public class Main
         // Routing
 
        app.get("/", ctx -> ctx.render("index.html"));
-       app.post("/createcupcake",ctx ->CreateACupcake.createACupcake(ctx,connectionPool));
-       app.get("/calculate",ctx-> CreateACupcake.orderLineSum(ctx,connectionPool));
+       app.post("/login",ctx ->CreateACupcake.createACupcake(ctx,connectionPool));
+       app.post("/cart",ctx-> CreateACupcake.orderLineSum(ctx,connectionPool));
 
 
 
