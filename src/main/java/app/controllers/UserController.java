@@ -1,5 +1,6 @@
 package app.controllers;
 
+import app.Main;
 import app.entities.User;
 import app.exceptions.DatabaseException;
 import app.persistence.UserMapper;
@@ -15,7 +16,7 @@ public class UserController {
         app.post("/index", ctx -> createUser(ctx,connectionPool));
         app.get("/index", ctx -> ctx.render("index.html"));
 
-        app.get("login", ctx -> ctx.render("login.html"));
+        app.get("/login", ctx -> ctx.render("login.html"));
         app.post("/login", ctx -> login(ctx, connectionPool));
 
         app.get("logout", ctx -> logout(ctx));
@@ -47,7 +48,7 @@ public class UserController {
             {
                 UserMapper.createUser(email,password1,connectionPool);
                 ctx.attribute("message", "Hermed oprettet med email: " + email + ". Log på.");
-                ctx.render("index.html");
+                ctx.render("login.html");
             }
             catch (DatabaseException e)
             {
@@ -74,7 +75,7 @@ public class UserController {
             //En meddelelse om, at brugeren er logget ind, tilføjes til attributterne i kontekstobjektet.
             ctx.attribute("message", "du er nu logget ind");
             //Til sidst renderes en HTML-side, som brugeren vil blive videresendt til efter vellykket login.
-            ctx.render("?.html");
+            ctx.redirect("admin.html");
         }
         catch (DatabaseException e){
             //Fejlmeddelelsen fra DatabaseException tilføjes som en attribut til kontekstobjektet.
