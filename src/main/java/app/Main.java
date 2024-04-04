@@ -1,10 +1,7 @@
 package app;
 
 import app.config.ThymeleafConfig;
-import app.controllers.TimeZonesController;
-import app.controllers.UserController;
-import app.controllers.WardrobeCategoryController;
-import app.controllers.WardrobeItemController;
+import app.controllers.CreateACupcake;
 import app.persistence.ConnectionPool;
 import io.javalin.Javalin;
 import io.javalin.rendering.template.JavalinThymeleaf;
@@ -29,7 +26,10 @@ public class Main
 
         // Routing
 
-        app.get("/", ctx -> ctx.render("index.html"));
+       app.get("/", ctx -> ctx.render("index.html"));
+       app.post("/createcupcake",ctx ->CreateACupcake.createACupcake(ctx,connectionPool));
+       app.get("/calculate",ctx-> CreateACupcake.orderLineSum(ctx,connectionPool));
+
 
     }
 }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>create a cupcake</title>
+</head>
+<body>
+    <img class="picture" alt="logo" src="../../resources/public/images/Olsker_logo.png"/>
+
+    <form id="dropdowns" method="post">
+        <select name="bottom" id="bottom" th:required="true">
+            <option value="" disabled selected>Vælg bund...</option>
+            <option
+                    th:each="bottom : ${bottoms}"
+                    th:value="${bottom.id}"
+                    th:name="${bottom_id}"
+                    th:text="${bottom.name + ' ' + bottom.price + 'kr'}">
+                bottom
+            </option>
+        </select>
+        <select name="top" id="top" th:required="true">
+            <option value="" disabled selected>Vælg top...</option>
+            <option
+                    th:each="top : ${tops}"
+                    th:value="${top.id}"
+                    th:name="${topping_id}"
+                    th:text="${top.name + ' ' + top.price + 'kr'}">
+                top
+            </option>
+        </select>
+</div>
+<div class="Vælg antal">
+    <select name="quantity">
+        <option value="" disabled selected hidden>Antal</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+        <option value="35">35</option>
+        <option value="40">40</option>
+        <option value="55">55</option>
+    </select>
+    <input type="submit" value="Submit" formaction="/calculate">
+
+
+        </div>
+    </form>
+</body>
+</html>
