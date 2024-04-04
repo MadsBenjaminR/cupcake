@@ -99,7 +99,7 @@ public class CreateACupcakeMapper {
         Bottom bottom =null;
 
 
-        String sql="SELECT * FROM public.top where top_id=?";
+        String sql="SELECT * FROM public.bottom where bottom_id=?";
         try (Connection connection = connectionPool.getConnection())
         {
             try (PreparedStatement ps = connection.prepareStatement(sql))
@@ -110,7 +110,7 @@ public class CreateACupcakeMapper {
                 ResultSet rs = ps.executeQuery();
                 while (rs.next())
                 {
-                    int id = rs.getInt("top_id");
+                    int id = rs.getInt("bottom_id");
                     String name = rs.getString("name");
                     int price = rs.getInt("price");
                     bottom =new Bottom(id, name, price);

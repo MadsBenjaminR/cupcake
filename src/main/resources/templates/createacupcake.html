@@ -21,7 +21,7 @@
         <select name="top" id="top" th:required="true">
             <option value="" disabled selected>Vælg top...</option>
             <option
-                    th:each="top : ${tops}"
+                    th:each=" top : ${toppings}"
                     th:value="${top.id}"
                     th:name="${topping_id}"
                     th:text="${top.name + ' ' + top.price + 'kr'}">
@@ -44,7 +44,7 @@
         <option value="40">40</option>
         <option value="55">55</option>
     </select>
-    <input type="submit" value="Submit" formaction="/calculate">
+    <input type="submit" value="Submit" formaction="/cart">
 
 
         </div>
