@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+</head>
+<body>
+<h1>Welcome&nbsp; <span th:text="${session.currentUser.username}"> </span></h1>
+
+<div class="page">
+    <h1>Velkommen til</h1>
+    <a href="../index.html" th:href="@{/}">
+        <img class="picture" alt="logo" src="../public/images/Olsker logo.png" th:src="@{/images/matchmaker/matchmakerlogo.png}">
+    </a>
+    <form class="generic-form" action="/addCredit" method="post">
+        <input type="text" name="balance" placeholder="add credit"/>
+        <input type="text" name="email" placeholder="who gets the credit?"/>
+
+        <button class="creditadded btn-ok" type="submit">add credit</button>
+    </form>
+</div>
+<div><p th:text="${message}"></p></div>
+</body>
+</html>
