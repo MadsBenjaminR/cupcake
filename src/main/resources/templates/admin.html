@@ -5,7 +5,16 @@
     <title>Admin</title>
 </head>
 <body>
-<h1>Welcome&nbsp; <span th:text="${session.currentUser.username}"> </span></h1>
+<td>
+    <!-- if customer is logged in -->
+    <div th:if="${session.currentUser != null}">
+        <div th:text="${session.currentUser.email}"></div>
+    </div>
+    <!-- ELSE -->
+    <div th:unless="${session.currentUser != null}">
+        <button class="btn btn-ok" type="submit" formaction="/login">Login</button>
+    </div>
+</td>
 
 <div class="page">
     <h1>Velkommen til</h1>

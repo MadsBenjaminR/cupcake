@@ -13,7 +13,6 @@ import io.javalin.http.Context;
  */
 public class CreditController {
     public static void addRoutes(Javalin app, ConnectionPool connectionPool){
-
         app.post("/addCredit", ctx -> addCredit(ctx, connectionPool));
 
     }
