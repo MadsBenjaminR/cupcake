@@ -2,11 +2,12 @@ package app;
 
 import app.config.ThymeleafConfig;
 import app.controllers.CreateACupcake;
-import app.controllers.CreditController;
-import app.controllers.UserController;
+import app.entities.Bottom;
+import app.entities.Top;
 import app.persistence.ConnectionPool;
 import io.javalin.Javalin;
 import io.javalin.rendering.template.JavalinThymeleaf;
+import kotlin.Pair;
 
 public class Main
 {
@@ -28,11 +29,12 @@ public class Main
 
         // Routing
 
-       app.get("/", ctx -> ctx.render("login.html"));
+       app.get("/", ctx -> ctx.render("index.html"));
        app.post("/createcupcake",ctx ->CreateACupcake.createACupcake(ctx,connectionPool));
-       CreditController.addRoutes(app, connectionPool);
-       UserController.addRoutes(app, connectionPool);
        app.get("/calculate",ctx-> CreateACupcake.orderLineSum(ctx,connectionPool));
+
+
+
 
 
     }
