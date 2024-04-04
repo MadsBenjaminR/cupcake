@@ -16,8 +16,18 @@
         </a>
     </header>
 
+<td>
+    <!-- if customer is logged in -->
+    <div th:if="${session.currentUser != null}">
+        <div th:text="session.currentUser.email"></div>
+    </div>
+    <!-- ELSE -->
+    <div th:unless="${session.currentUser != null}">
+        <h1>Login</h1>
+    </div>
+</td>
 
-    <h3>Login</h3>
+
 
     <form class="generic-form" method="post">
         <input type="text" name="email" placeholder="Enter your username"/>
