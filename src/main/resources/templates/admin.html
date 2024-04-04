@@ -5,6 +5,7 @@
     <title>Admin</title>
 </head>
 <body>
+
 <td>
     <!-- if customer is logged in -->
     <div th:if="${session.currentUser != null}">
@@ -16,18 +17,40 @@
     </div>
 </td>
 
+
 <div class="page">
     <h1>Velkommen til</h1>
     <a href="../index.html" th:href="@{/}">
-        <img class="picture" alt="logo" src="../public/images/Olsker logo.png" th:src="@{/images/matchmaker/matchmakerlogo.png}">
+        <img class="picture" alt="logo" src="../public/images/Olsker logo.png" th:src="@{/images/matchmaker/matchmakerlogo.png} ">
     </a>
-    <form class="generic-form" action="/addCredit" method="post">
+    <form class="generic-form"  method="post">
         <input type="text" name="balance" placeholder="add credit"/>
         <input type="text" name="email" placeholder="who gets the credit?"/>
 
-        <button class="creditadded btn-ok" type="submit">add credit</button>
+        <button class="creditadded btn-ok" type="submit" formaction="/admin">add credit</button>
+        <div><p class="error" th:unless="${#strings.isEmpty(message)}" th:text="${message}"></p></div>
+
     </form>
+
+<form class="table" id="table-styling" method="post">
+    <table class="task-table">
+        <thead>
+        <tr>
+            <th>Orderline ID</th>
+            <th>Orderline Quantity</th>
+            <th>Orderline Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="orderline: ${session.orderlines}">
+            <td th:text="${orderline.orderlineId}"></td>
+            <td th:text="${orderline.quantity}"></td>
+            <td th:text="${orderline.price}"></td>
+        </tr>
+        </tbody>
+    </table>
+</form>
 </div>
-<div><p th:text="${message}"></p></div>
+
 </body>
 </html>

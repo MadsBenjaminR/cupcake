@@ -16,8 +16,24 @@
 <button class="btn btn-ok" type="submit" formaction="/createcupcake">Login</button>
 <button class="btn btn-ok2" type="submit" formaction="/admin.html">admin</button>
 
-</form>
-<p>This is your first web application in this world</p>
+  
+    <form class="generic-form" method="get">
+        <input type="text" name="email" placeholder="Enter your email"/>
+        <input type="password1" name="password1" placeholder="Enter your password"/>
+        <input type="password2" name="password2" placeholder="Reenter your password"/>
+
+        <button class="btn btn-ok" type="submit" formaction="/login">Register</button>
+        <p>OR</p>
+        <button class="btn btn-ok" type="submit" formaction="/login">Login</button>
+        <p>OR</p>
+        <button class="btn btn-ok" type="submit" formaction="/?">Continue without login</button>
+
+
+        <div><p class="error" th:unless="${#strings.isEmpty(message)}" th:text="${message}"></p></div>
+    </form>
+
+
+</div>
 
 </body>
 </html>

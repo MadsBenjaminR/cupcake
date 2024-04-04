@@ -13,7 +13,9 @@ import io.javalin.http.Context;
  */
 public class CreditController {
     public static void addRoutes(Javalin app, ConnectionPool connectionPool){
-        app.post("/addCredit", ctx -> addCredit(ctx, connectionPool));
+
+        app.post("/admin", ctx -> addCredit(ctx, connectionPool));
+
 
     }
 
@@ -25,8 +27,8 @@ public class CreditController {
 
         try{
             CreditMapper.addCredit(email, balance, connectionPool);
-            ctx.attribute("kredit er overført til " + email);
-            //ctx.render("");
+            ctx.attribute("message","kredit er overført til " + email);
+            ctx.render("admin.html");
         }catch (DatabaseException e){
             ctx.attribute("message", "kredit kunne ikke indsættes");
             //ctx.render("");
