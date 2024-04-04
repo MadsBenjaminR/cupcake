@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcbf74c7-c57b-4c47-9b56-bf482801a3af" name="Changes" comment="gittest">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/entities/Orderline.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7ef957c1-a6c2-4e96-9462-b4fb6c016818.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7ef957c1-a6c2-4e96-9462-b4fb6c016818.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7ef957c1-a6c2-4e96-9462-b4fb6c016818/storage_v2/_src_/database/cupcake.dq0IQw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7ef957c1-a6c2-4e96-9462-b4fb6c016818/storage_v2/_src_/database/cupcake.dq0IQw/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/entities/User.java" afterDir="false" />
-    </list>
+    <list default="true" id="fcbf74c7-c57b-4c47-9b56-bf482801a3af" name="Changes" comment="userStory01" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +13,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="HTML File" />
         <option value="Class" />
@@ -36,13 +27,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubProjectSettings">
-    <option name="branchProtectionPatterns">
-      <list>
-        <option value="main" />
-      </list>
-    </option>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -50,9 +34,7 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2ea4zVo1fKxnmoYbSdHDyEYHMbt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -64,16 +46,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "us01",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/benja/Documents/Semester2/Projects/cupcake/cupcake/src/main/resources/public/images",
+    "last_opened_file_path": "/Users/mingo/Desktop/sem2/Cupcake01/src/main/resources/public/images",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.21875",
     "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
@@ -86,7 +68,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\projects\sem2\fullstack\cupcake\src\main\resources\templates" />
+      <recent name="$PROJECT_DIR$/src/main/resources/public/images" />
     </key>
   </component>
   <component name="RunManager">
@@ -174,13 +156,13 @@
       <option name="project" value="LOCAL" />
       <updated>1712133812146</updated>
     </task>
-    <task id="LOCAL-00007" summary="feature us-2">
+    <task id="LOCAL-00007" summary="userStory01">
       <option name="closed" value="true" />
-      <created>1712141390405</created>
+      <created>1712214632474</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1712141390405</updated>
+      <updated>1712214632474</updated>
     </task>
     <option name="localTasksCounter" value="8" />
     <servers />
@@ -203,7 +185,7 @@
     <MESSAGE value="første" />
     <MESSAGE value="mapper" />
     <MESSAGE value="gittest" />
-    <MESSAGE value="feature us-2" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature us-2" />
+    <MESSAGE value="userStory01" />
+    <option name="LAST_COMMIT_MESSAGE" value="userStory01" />
   </component>
 </project>
