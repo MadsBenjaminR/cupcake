@@ -8,7 +8,7 @@
 
 <div class="email">
     <header>
-    <span th:text="${session.currentUser.email}"> </span>
+    <span text="${session.currentUser.email}"> </span>
     </header>
 </div>
 
@@ -25,15 +25,16 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="item: ${session.itemList}">
-            <td th:text="${item.bottom}"></td>
-            <td th:text="${item.top}"></td>
-            <td th:text="${item.amount}"></td>
-            <td th:text="${item.price}"></td>
-            <td>
-                <button type="submit" name="orderline_id" th:value="${item.itemId}" formaction="/deleteitem">Delete
-                </button>
-            </td>
+        <tr th:each="item, itterationStat: ${session.cart}">
+            <td th:text="${item.Bottom.name}"></td>
+            <td th:text="${item.Top.name}"></td>
+            <td th:text="${item.quantity}"></td>
+
+        </tr>
+        <tr>
+    <p th:text="${session.sum}" id="sumText" ></p>
+    <p th:text="${session.totalitems}" id="sumTextt" ></p>
+
         </tr>
         </tbody>
     </table>

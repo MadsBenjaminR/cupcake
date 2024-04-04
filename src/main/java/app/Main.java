@@ -39,10 +39,5 @@ public class Main
         CreditController.addRoutes(app,connectionPool);
        app.post("/createcupcake",ctx ->CreateACupcake.createACupcake(ctx,connectionPool));
        app.get("/calculate",ctx-> CreateACupcake.orderLineSum(ctx,connectionPool));
-
-
-
-
-
     }
 }
