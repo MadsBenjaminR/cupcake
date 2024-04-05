@@ -42,7 +42,7 @@ public class OrderlineMapper {
         }
         return orderlines;
     }
-    public static void deductFromCart(int price, User user, int sum,ConnectionPool connectionPool) {
+    public static void deductFromBalance(User user, int totalSum, ConnectionPool connectionPool) {
 
         String sql = "SELECT * from users where user_id=?";
 
@@ -54,17 +54,17 @@ public class OrderlineMapper {
             ResultSet rs = ps.executeQuery();
 
             if (rs.next()) {
-                int currentPrice = rs.getInt("price");
-                int newTotalPrice = currentPrice - price;
-                if (newTotalPrice < sum) {
+                int currentBalance = rs.getInt("balance");
+                int newBalance = currentBalance - totalSum;
+                if (newBalance < totalSum) {
                     System.out.println("Insufficient funds!");
 
                 }
                   String sql02 = "update users set balance=? where user_id=?";
                 PreparedStatement ps02 = connection.prepareStatement(sql02);
-                    ps02.setInt(1, newTotalPrice);
+                    ps02.setInt(1, newBalance);
                     ps02.setInt(2, user.getUserId());
-                    ps02.executeQuery();
+                    ps02.executeUpdate();
                     System.out.println("Balance has been updated");
 
             }
