@@ -64,30 +64,33 @@ public class UserController {
 
     }
 
-    public static void login(Context ctx, ConnectionPool connectionPool){
+    public static void login(Context ctx, ConnectionPool connectionPool) {
 
         String email = ctx.formParam("email");
         String password = ctx.formParam("password");
 
-        try{
-            User user = UserMapper.login(email,password,connectionPool);
+        try {
+           User user = UserMapper.login(email, password, connectionPool);
             //Hvis login-operationen lykkes, gemmes brugeren som den aktuelle bruger i sessionsattributterne i kontekstobjektet.
             ctx.sessionAttribute("currentUser", user);
             //En meddelelse om, at brugeren er logget ind, tilføjes til attributterne i kontekstobjektet.
             ctx.attribute("message", "du er nu logget ind");
-            //Til sidst renderes en HTML-side, som brugeren vil blive videresendt til efter vellykket login.
+            //Til sidst renderes en HTML-side, som brugeren vil blive videresendt til efter vellykket login
+          
           if (user.getRole().equalsIgnoreCase("admin")) {
               ctx.redirect("admin.html");
           } else {
               ctx.render("index");
           }
 
-        }
-        catch (DatabaseException e){
+
+        } catch (DatabaseException e) {
             //Fejlmeddelelsen fra DatabaseException tilføjes som en attribut til kontekstobjektet.
             ctx.attribute("message", e.getMessage());
             // HTML-siden, sandsynligvis startsiden, rendres, og brugeren præsenteres for en fejlmeddelelse.
             ctx.render("login.html");
         }
+
     }
+
 }
