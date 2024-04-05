@@ -95,7 +95,7 @@ public class CartLineController {
            int orderId = OrderlineMapper.makeAnOrder(totalsum,user,connectionPool);
 
 
-
+            OrderlineMapper.deductFromBalance(user,totalsum,connectionPool);
 
 
                 int lastIndex = alllines.size() - 1;
