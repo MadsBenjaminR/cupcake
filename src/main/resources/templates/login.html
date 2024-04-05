@@ -16,17 +16,23 @@
         </a>
     </header>
 
-<td>
-    <!-- if customer is logged in -->
-    <div th:if="${session.currentUser != null}">
-        <div th:text="session.currentUser.email"></div>
-    </div>
-    <!-- ELSE -->
-    <div th:unless="${session.currentUser != null}">
-        <h1>Login</h1>
-    </div>
-</td>
+    <td>
+        <div th:if="${session.currentUser != null}">
+            <div th:text="${session.currentUser.email}"></div>
+        </div>
 
+        <div th:unless="${session.currentUser == admin}">
+            <a href="admin.html" th:href="@{/admin}">
+                <button class="loginButtonAdmin" type="submit" formaction="/admin">Admin</button>
+            </a>
+        </div>
+
+        <div th:unless="${session.currentUser != null}">
+            <a href="login.html" th:href="@{/login}">
+                <button class="loginButton" type="submit" formaction="/login">Login</button>
+            </a>
+        </div>
+    </td>
 
 
     <form class="generic-form" method="post">
