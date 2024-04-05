@@ -5,10 +5,7 @@ import app.entities.Orderline;
 import app.entities.User;
 import app.exceptions.DatabaseException;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -80,24 +77,21 @@ public class OrderlineMapper {
     }
 
 
-    public static void inSertOrderHistory(int pricePrUnit, User user, int quantity, int topId, int bottomId, ConnectionPool connectionPool) throws DatabaseException {
+    public static void inSertOrderHistory(int pricePrUnit, int orderId, int quantity, int topId, int bottomId, ConnectionPool connectionPool) throws DatabaseException {
 
-        String sql = "INSERT INTO public.orderline quantity, price, order_id, bottom_id, top_id) VALUES ( ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO public.orderline (quantity, price, order_id, bottom_id, top_id) VALUES ( ?, ?, ?, ?, ?)";
 
         try(Connection connection = connectionPool.getConnection();
             PreparedStatement ps = connection.prepareStatement(sql);
         ){
             ps.setInt(1, quantity);
             ps.setInt(2, pricePrUnit);
-            ps.setInt(3,user.getUserId());
-            ps.setInt(4,topId );
+            ps.setInt(3,orderId);
+            ps.setInt(4,topId);
             ps.setInt(5,bottomId);
 
-            int rowsAffected = ps.executeUpdate();
-            if (rowsAffected != 1)
-            {
-                throw new DatabaseException("Fejl ved indsættelse af historik");
-            }
+            ps.executeUpdate();
+
 
         }catch (SQLException e) {
             throw new RuntimeException(e);
@@ -105,4 +99,39 @@ public class OrderlineMapper {
 
 
     }
+
+    public static int makeAnOrder(int totalsum, User user,ConnectionPool connectionPool) throws SQLException, DatabaseException {
+
+        int orderId = 0;
+
+        String sql="INSERT INTO public.order(price, user_id) VALUES (?, ?)";
+
+        try (
+                Connection connection = connectionPool.getConnection();
+                PreparedStatement ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+        )
+
+        {
+            ps.setInt(1,totalsum);
+            ps.setInt(2,user.getUserId());
+
+            int rowsAffected = ps.executeUpdate();
+
+            if (rowsAffected>0){
+                ResultSet rs = ps.getGeneratedKeys();
+                rs.next();
+                orderId = rs.getInt("order_id");
+                return orderId;
+            }
+
+
+        }catch (SQLException e){
+            throw new DatabaseException("fejl i data");
+        }
+
+        return orderId;
+    }
+
 }
+
+

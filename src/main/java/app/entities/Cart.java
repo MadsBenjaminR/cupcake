@@ -5,9 +5,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cart {
-    private List<CartLine> cartLines=new ArrayList<>();
+    private static List<CartLine> cartLines=new ArrayList<>();
 
-    public List<CartLine> getCartLines() {
+    public static List<CartLine> getCartLines() {
         return cartLines;
     }
 
@@ -18,7 +18,7 @@ public class Cart {
 
     }
 
-    public int getTotal(){
+    public static int getTotal(){
        int sum=0;
 
         for (CartLine cartLine : cartLines) {

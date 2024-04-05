@@ -13,17 +13,20 @@ import java.util.List;
 
 public class CartLineController {
 
+
     public static void addRoutes(Javalin app, ConnectionPool connectionPool) {
         app.get("/", ctx -> createACupcake(ctx, connectionPool));
-        app.post("/cart",ctx-> CartLineController.orderLineSum(ctx,connectionPool));
+        app.post("/cart", ctx -> CartLineController.orderLineSum(ctx, connectionPool));
+        app.post("/pay", ctx -> CartLineController.insertInhistory(ctx, connectionPool));
+
 
     }
 
 
-    public static void createACupcake(Context ctx, ConnectionPool connectionPool)  {
+    public static void createACupcake(Context ctx, ConnectionPool connectionPool) {
 
         List<Top> tops = new ArrayList<>();
-        List<Bottom> bottoms=new ArrayList<>();
+        List<Bottom> bottoms = new ArrayList<>();
         try {
             tops = CreateACupcakeMapper.getAllToppings(connectionPool);
             bottoms = CreateACupcakeMapper.getAllBottoms(connectionPool);
@@ -40,71 +43,75 @@ public class CartLineController {
     }
 
     public static void orderLineSum(Context ctx, ConnectionPool connectionPool) {
-        ctx.sessionAttribute("currentUser");
-        int sum=0;
-        int totalitems=0;
-
         Cart cart = ctx.sessionAttribute("cart");
-        if(cart==null){
-            cart =new Cart();
+
+        ctx.sessionAttribute("currentUser");
+        int sum = 0;
+        int totalitems = 0;
+
+        if (cart == null) {
+            cart = new Cart();
 
         }
         try {
 
-    int toppingId = Integer.parseInt(ctx.formParam("top"));
-    int bottomId = Integer.parseInt(ctx.formParam("bottom"));
-    int quantity = Integer.parseInt(ctx.formParam("quantity"));
+            int toppingId = Integer.parseInt(ctx.formParam("top"));
+            int bottomId = Integer.parseInt(ctx.formParam("bottom"));
+            int quantity = Integer.parseInt(ctx.formParam("quantity"));
 
-    Top top = CreateACupcakeMapper.getToppingById(toppingId, connectionPool);//laver et objet af top
-    Bottom bottom = CreateACupcakeMapper.getBaseById(bottomId, connectionPool);//laver et objet af base
-
-
-    cart.add(top, bottom, quantity);
-    sum = cart.getTotal();
+            Top top = CreateACupcakeMapper.getToppingById(toppingId, connectionPool);//laver et objet af top
+            Bottom bottom = CreateACupcakeMapper.getBaseById(bottomId, connectionPool);//laver et objet af base
 
 
-    ctx.sessionAttribute("cart", cart.getCartLines());
-    ctx.sessionAttribute("sum", sum);
-    totalitems = cart.totalItemsInCart();
-    ctx.sessionAttribute("totalitems", totalitems);
+            cart.add(top, bottom, quantity);
+            sum = cart.getTotal();
 
 
-    ctx.render("/cart.html");
+            ctx.sessionAttribute("cart", cart.getCartLines());
+            ctx.sessionAttribute("sum", sum);
+            totalitems = cart.totalItemsInCart();
+            ctx.sessionAttribute("totalitems", totalitems);
+
+
+            ctx.render("/cart.html");
 
         } catch (NumberFormatException e) {
-    throw new RuntimeException(e);
-}
+            throw new RuntimeException(e);
+        }
 
     }
 
     public static void insertInhistory(Context ctx, ConnectionPool connectionPool) {
 
-            User user = ctx.sessionAttribute("currentUser");
-            int totalsum = 0;
-            Cart cart = ctx.sessionAttribute("cart");
-            if (cart == null) {
-                cart = new Cart();
-
-            }
-            try {
+        User user = ctx.sessionAttribute("currentUser");
+        int totalsum = 0;
 
 
-                totalsum = cart.getTotal();
-                List<CartLine> alllines = cart.getCartLines();
+        try {
+            List<CartLine> alllines = Cart.getCartLines();
+            System.out.println(alllines.size());
 
-                CartLine firstCartLine = alllines.get(0);
-
-                int pricePrUnit = firstCartLine.getTop().getPrice()+firstCartLine.getBottom().getPrice();
-
-                for (int i = 0; i <= alllines.size(); i++) {
-                    OrderlineMapper.inSertOrderHistory(pricePrUnit, user,firstCartLine.getQuantity(),firstCartLine.getTop().getId(),firstCartLine.getBottom().getId(), connectionPool);
+             totalsum =Cart.getTotal();
+           int orderId = OrderlineMapper.makeAnOrder(totalsum,user,connectionPool);
 
 
+
+
+
+                int lastIndex = alllines.size() - 1;
+                int quantity = alllines.get(lastIndex).getQuantity() + alllines.get(0).getQuantity();
+                int pricePrUnit = alllines.get(0).getTop().getPrice() + alllines.get(lastIndex).getBottom().getPrice();
+                int getTopId = alllines.get(0).getTop().getId();
+                int getBottomId = alllines.get(lastIndex).getBottom().getId();
+
+                for (int i = 0; i < alllines.size(); i++) {
+                    OrderlineMapper.inSertOrderHistory(pricePrUnit, orderId, quantity, getTopId, getBottomId, connectionPool);
                 }
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
-    }
+}
 
     
