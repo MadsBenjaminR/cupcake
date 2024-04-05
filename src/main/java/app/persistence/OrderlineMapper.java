@@ -1,12 +1,9 @@
 package app.persistence;
 
 
-import app.entities.Bottom;
-
-import app.controllers.UserController;
-
 import app.entities.Orderline;
 import app.entities.User;
+import app.exceptions.DatabaseException;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -83,8 +80,28 @@ public class OrderlineMapper {
     }
 
 
-    public static void inSertOrderHistory(int pricePrUnit, User user, int sum, ConnectionPool connectionPool) {
+    public static void inSertOrderHistory(int pricePrUnit, User user, int quantity, int topId, int bottomId, ConnectionPool connectionPool) throws DatabaseException {
 
+        String sql = "INSERT INTO public.orderline quantity, price, order_id, bottom_id, top_id) VALUES ( ?, ?, ?, ?, ?)";
+
+        try(Connection connection = connectionPool.getConnection();
+            PreparedStatement ps = connection.prepareStatement(sql);
+        ){
+            ps.setInt(1, quantity);
+            ps.setInt(2, pricePrUnit);
+            ps.setInt(3,user.getUserId());
+            ps.setInt(4,topId );
+            ps.setInt(5,bottomId);
+
+            int rowsAffected = ps.executeUpdate();
+            if (rowsAffected != 1)
+            {
+                throw new DatabaseException("Fejl ved indsættelse af historik");
+            }
+
+        }catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
 
 
     }
