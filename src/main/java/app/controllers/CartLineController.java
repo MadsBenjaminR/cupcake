@@ -40,7 +40,7 @@ public class CartLineController {
     }
 
     public static void orderLineSum(Context ctx, ConnectionPool connectionPool) {
-        User user = ctx.sessionAttribute("currentUser");
+        ctx.sessionAttribute("currentUser");
         int sum=0;
         int totalitems=0;
 
@@ -57,7 +57,6 @@ public class CartLineController {
 
     Top top = CreateACupcakeMapper.getToppingById(toppingId, connectionPool);//laver et objet af top
     Bottom bottom = CreateACupcakeMapper.getBaseById(bottomId, connectionPool);//laver et objet af base
- List<CartLine> units=cart.getCartLines();
 
 
     cart.add(top, bottom, quantity);
