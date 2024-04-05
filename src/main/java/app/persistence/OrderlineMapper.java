@@ -1,6 +1,10 @@
 package app.persistence;
 
+
 import app.entities.Bottom;
+
+import app.controllers.UserController;
+
 import app.entities.Orderline;
 import app.entities.User;
 
@@ -19,7 +23,7 @@ public class OrderlineMapper {
 
         List<Orderline> orderlines = new ArrayList<>();
 
-        String sql = "SELECT * from orderline";
+        String sql = "select orderline.orderline_id, orderline.quantity, orderline.price as orderline_price, orderline.order_id, orderline.bottom_id, orderline.top_id, users.email from orderline join orders on orderline.order_id = orders.order_id join users on orders.user_id = users.user_id";
 
         try (
                 Connection connection = connectionPool.getConnection();
@@ -30,10 +34,10 @@ public class OrderlineMapper {
             while (rs.next())
             {
                 int quantity = rs.getInt("quantity");
-                int price = rs.getInt("price");
+                int price = rs.getInt("orderline_price");
                 int orderlineId = rs.getInt("orderline_id");
-
-                Orderline orderline = new Orderline(orderlineId,price,quantity);
+                String email = rs.getString("email");
+                Orderline orderline = new Orderline(orderlineId,price,quantity, email);
                 orderlines.add(orderline);
             }
 

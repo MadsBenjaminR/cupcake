@@ -19,16 +19,18 @@
 
 
 <div class="page">
-    <h1>Velkommen til</h1>
-    <a href="../index.html" th:href="@{/}">
-        <img class="picture" alt="logo" src="../public/images/Olsker logo.png" th:src="@{/images/matchmaker/matchmakerlogo.png} ">
+    <a href="../login.html" th:href="@{/login}">
+        <img alt="logo" src="../public/images/Olsker logo.png"
+             th:src="@{/images/Olsker_logo.png}"/>
     </a>
+
     <form class="generic-form"  method="post">
         <input type="text" name="balance" placeholder="add credit"/>
         <input type="text" name="email" placeholder="who gets the credit?"/>
 
         <button class="creditadded btn-ok" type="submit" formaction="/admin">add credit</button>
         <div><p class="error" th:unless="${#strings.isEmpty(message)}" th:text="${message}"></p></div>
+
 
     </form>
 
@@ -39,6 +41,7 @@
             <th>Orderline ID</th>
             <th>Orderline Quantity</th>
             <th>Orderline Price</th>
+            <th>Email</th>
         </tr>
         </thead>
         <tbody>
@@ -46,6 +49,7 @@
             <td th:text="${orderline.orderlineId}"></td>
             <td th:text="${orderline.quantity}"></td>
             <td th:text="${orderline.price}"></td>
+            <td th:text="${orderline.email}"></td>
         </tr>
         </tbody>
     </table>

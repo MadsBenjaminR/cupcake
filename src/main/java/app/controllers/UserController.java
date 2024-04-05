@@ -75,9 +75,14 @@ public class UserController {
             ctx.sessionAttribute("currentUser", user);
             //En meddelelse om, at brugeren er logget ind, tilføjes til attributterne i kontekstobjektet.
             ctx.attribute("message", "du er nu logget ind");
-            //Til sidst renderes en HTML-side, som brugeren vil blive videresendt til efter vellykket login.
+            //Til sidst renderes en HTML-side, som brugeren vil blive videresendt til efter vellykket login
+          
+          if (user.getRole().equalsIgnoreCase("admin")) {
+              ctx.redirect("admin.html");
+          } else {
+              ctx.render("index");
+          }
 
-            ctx.redirect("admin.html");
 
         } catch (DatabaseException e) {
             //Fejlmeddelelsen fra DatabaseException tilføjes som en attribut til kontekstobjektet.

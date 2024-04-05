@@ -1,5 +1,6 @@
 package app.controllers;
 
+import app.entities.User;
 import app.persistence.ConnectionPool;
 import app.persistence.OrderlineMapper;
 import io.javalin.Javalin;

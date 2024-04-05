@@ -8,6 +8,9 @@ public class Orderline {
     private int orderId;
     private int bottomId;
     private int topId;
+    private String email;
+
+
 
     public Orderline(int orderlineId, int quantity, int price, int orderId, int bottomId, int topId) {
         this.orderlineId = orderlineId;
@@ -24,6 +27,12 @@ public class Orderline {
         this.price = price;
     }
 
+    public Orderline(int orderlineId, int quantity, int price, String email) {
+        this.orderlineId = orderlineId;
+        this.quantity = quantity;
+        this.price = price;
+        this.email = email;
+    }
     public int getOrderlineId() {
         return orderlineId;
     }
@@ -46,5 +55,9 @@ public class Orderline {
 
     public int getTopId() {
         return topId;
+    }
+
+    public String getEmail() {
+        return email;
     }
 }
