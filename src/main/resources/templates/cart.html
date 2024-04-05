@@ -8,24 +8,12 @@
 </head>
 <body>
 
-<img class="picture" alt="logo" src="../../resources/public/images/Olsker_logo.png"/>
+<img class="picture" alt="logo" src="../../resources/public/images/Olsker_logo.png" width="20%/>
 
 
 <td>
-    <div th:if="${session.currentUser != null}">
-        <div th:text="${session.currentUser.email}"></div>
-    </div>
-
-    <div th:unless="${session.currentUser == admin}">
-        <a href="admin.html" th:href="@{/admin}">
-        <button class="loginButtonAdmin" type="submit" formaction="/admin">Admin</button>
-        </a>
-    </div>
-
-    <div th:unless="${session.currentUser != null}">
-        <a href="login.html" th:href="@{/login}">
-            <button class="loginButton" type="submit" formaction="/login">Login</button>
-        </a>
+    <div th:if="${session.currentUser.role == admin}">
+        <button th:text="${session.currentUser.email}" type="button" formaction="/admin "></button>
     </div>
 </td>
 
