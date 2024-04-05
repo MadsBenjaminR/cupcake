@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:href="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>cart</title>
@@ -8,24 +8,12 @@
 </head>
 <body>
 
-<img class="picture" alt="logo" src="../../resources/public/images/Olsker_logo.png"/>
+<img class="picture" alt="logo" src="../../resources/public/images/Olsker_logo.png" width="20%/>
 
 
 <td>
-    <div th:if="${session.currentUser != null}">
-        <div th:text="${session.currentUser.email}"></div>
-    </div>
-
-    <div th:unless="${session.currentUser == admin}">
-        <a href="admin.html" th:href="@{/admin}">
-        <button class="loginButtonAdmin" type="submit" formaction="/admin">Admin</button>
-        </a>
-    </div>
-
-    <div th:unless="${session.currentUser != null}">
-        <a href="login.html" th:href="@{/login}">
-            <button class="loginButton" type="submit" formaction="/login">Login</button>
-        </a>
+    <div th:if="${session.currentUser.role == admin}">
+        <button th:text="${session.currentUser.email}" type="button" formaction="/admin "></button>
     </div>
 </td>
 
@@ -54,9 +42,15 @@
 
         </tr>
         </tbody>
+<tr>
+        <div th:if="${session.currentUser != null}">
+            <button class="payButton" type="submit" name="pay" formaction="/pay">Pay using wallet</button>
+        </div>
 
-       <!-- <button type="submit" name="itemId" th:value="${item.itemId}" formaction="/pay">pay with credits -->
-        </button>
+        <div th:unless="${session.currentUser != null}" class="logInToPurchase">
+            <p>You need to log in to purchase</p>
+        </div>
+</tr>
     </table>
 </form>
 </body>

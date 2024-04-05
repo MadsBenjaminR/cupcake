@@ -7,23 +7,7 @@
     <link href="../public/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet"/>
 </head>
 <body>
-<td>
-    <div th:if="${session.currentUser != null}">
-        <div th:text="${session.currentUser.email}"></div>
-    </div>
 
-    <div th:unless="${session.currentUser == admin}">
-        <a href="admin.html" th:href="@{/admin}">
-            <button class="loginButtonAdmin" type="submit" formaction="/admin">Admin</button>
-        </a>
-    </div>
-
-    <div th:unless="${session.currentUser != null}">
-        <a href="login.html" th:href="@{/login}">
-            <button class="loginButton" type="submit" formaction="/login">Login</button>
-        </a>
-    </div>
-</td>
 
     <img class="picture" alt="logo" src="../../resources/public/images/Olsker_logo.png"/>
 

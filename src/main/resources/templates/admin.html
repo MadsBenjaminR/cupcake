@@ -8,29 +8,11 @@
 </head>
 <body>
 
-<td>
-    <div th:if="${session.currentUser != null}">
-        <div th:text="${session.currentUser.email}"></div>
-    </div>
-
-    <div th:unless="${session.currentUser == admin}">
-        <a href="admin.html" th:href="@{/admin}">
-            <button class="loginButtonAdmin" type="submit" formaction="/admin">Admin</button>
-        </a>
-    </div>
-
-    <div th:unless="${session.currentUser != null}">
-        <a href="login.html" th:href="@{/login}">
-            <button class="loginButton" type="submit" formaction="/login">Login</button>
-        </a>
-    </div>
-</td>
-
 
 <div class="page">
     <a href="../login.html" th:href="@{/login}">
         <img alt="logo" src="../public/images/Olsker logo.png"
-             th:src="@{/images/Olsker_logo.png}"/>
+             th:src="@{/images/Olsker_logo.png} " width="20%/>
     </a>
 
     <form class="generic-form"  method="post">
