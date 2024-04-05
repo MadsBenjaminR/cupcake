@@ -14,7 +14,9 @@
     </div>
 
     <div th:unless="${session.currentUser != null}">
-        <button class="btn btn-ok" type="submit" formaction="/login">Login</button>
+        <form class="generic form" method="get">
+        <button class="btn btn-ok" type="button" formaction="/login">Login</button>
+        </form>
     </div>
 </td>
 
@@ -58,7 +60,6 @@
         <option value="55">55</option>
     </select>
     <input type="submit" value="Submit" formaction="/cart">
-
 
         </div>
     </form>

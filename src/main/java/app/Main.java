@@ -34,6 +34,6 @@ public class  Main
         OrderlineController.addRoutes(app,connectionPool);
         CreditController.addRoutes(app,connectionPool);
 
-       app.post("/insertIntoHistory",ctx-> CartLineController.insertInhistory(ctx,connectionPool));
+
     }
 }

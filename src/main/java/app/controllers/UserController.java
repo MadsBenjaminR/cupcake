@@ -80,7 +80,7 @@ public class UserController {
           if (user.getRole().equalsIgnoreCase("admin")) {
               ctx.redirect("admin.html");
           } else {
-              ctx.render("index");
+              ctx.render("cart");
           }
 
 
