@@ -29,12 +29,11 @@ public class Main
 
         // Routing
 
-        app.get("/", ctx -> ctx.render("index.html"));
+        CartLineController.addRoutes(app,connectionPool);
         UserController.addRoutes(app,connectionPool);
         OrderlineController.addRoutes(app,connectionPool);
         CreditController.addRoutes(app,connectionPool);
-       app.post("/createcupcake",ctx -> CartLineController.createACupcake(ctx,connectionPool));
-       app.get("/calculate",ctx-> CartLineController.orderLineSum(ctx,connectionPool));
+
        app.post("/insertIntoHistory",ctx-> CartLineController.insertInhistory(ctx,connectionPool));
     }
 }

@@ -4,6 +4,7 @@ import app.entities.*;
 import app.exceptions.DatabaseException;
 import app.persistence.CreateACupcakeMapper;
 import app.persistence.ConnectionPool;
+import app.persistence.OrderlineMapper;
 import io.javalin.Javalin;
 import io.javalin.http.Context;
 
@@ -12,12 +13,12 @@ import java.util.List;
 
 public class CartLineController {
 
-    public static void addRoutes(Javalin app, ConnectionPool connectionPool)
-    {
-
-       // app.post("/createcupcake",ctx ->createACupcake(ctx,connectionPool));
+    public static void addRoutes(Javalin app, ConnectionPool connectionPool) {
+        app.get("/", ctx -> createACupcake(ctx, connectionPool));
+        app.post("/cart",ctx-> CartLineController.orderLineSum(ctx,connectionPool));
 
     }
+
 
     public static void createACupcake(Context ctx, ConnectionPool connectionPool)  {
 
@@ -77,21 +78,34 @@ public class CartLineController {
 
     }
 
-    public static void insertInhistory(Context ctx, ConnectionPool connectionPool){
+    public static void insertInhistory(Context ctx, ConnectionPool connectionPool) {
 
-        Cart cart = ctx.sessionAttribute("cart");
-        if(cart==null){
-            cart =new Cart();
+            User user = ctx.sessionAttribute("currentUser");
+            int totalsum = 0;
+            Cart cart = ctx.sessionAttribute("cart");
+            if (cart == null) {
+                cart = new Cart();
 
-        }
-//        List<CartLine> alllines=cart.getCartLines();
+            }
+            try {
 
-       // int pricePrUnit=alllines.getFirst().getTop().getPrice()+alllines.getLast().getBottom().getPrice();
 
-//        for (int i=0 ; i <=alllines.size() ; i++){
-           // OrderlineMapper.inSertOrderHistory(pricePrUnit,user,sum,connectionPool);
+                totalsum = cart.getTotal();
+                List<CartLine> alllines = cart.getCartLines();
 
-        }
+                CartLine firstCartLine = alllines.get(0);
+
+                int pricePrUnit = firstCartLine.getTop().getPrice()+firstCartLine.getBottom().getPrice();
+
+                for (int i = 0; i <= alllines.size(); i++) {
+                    OrderlineMapper.inSertOrderHistory(pricePrUnit, user,firstCartLine.getQuantity(),firstCartLine.getTop().getId(),firstCartLine.getBottom().getId(), connectionPool);
+
+
+                }
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+    }
     }
 
     
