@@ -11,11 +11,13 @@
 <img class="picture" alt="logo" src="../../resources/public/images/Olsker_logo.png" width="20%" />
 
 
+
 <td>
     <divr th:if="${session.currentUser.role == admin}">
         <button th:text="${session.currentUser.email}" type="button" formaction="/admin "></button>
     </divr>
 </td>
+
 
 
 <form class="table" id="table-styling" method="post">
