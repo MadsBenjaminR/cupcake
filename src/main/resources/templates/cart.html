@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:href="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>cart</title>
@@ -55,8 +55,14 @@
         </tr>
         </tbody>
 
-        <button type="submit" name="itemId" th:value="${item.itemId}" formaction="/pay">pay with credits
-        </button>
+        <div th:if="${session.currentUser != null}">
+            <button class="payButton" type="submit" name="pay" formaction="/pay">Pay using wallet</button>
+        </div>
+
+        <div th:unless="${session.currentUser != null}" class="logInToPurchase">
+            <p>You need to log in to purchase</p>
+        </div>
+
     </table>
 </form>
 </body>
