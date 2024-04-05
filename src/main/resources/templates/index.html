@@ -12,6 +12,9 @@
 <td>
     <div th:if="${session.currentUser != null}">
         <div th:text="${session.currentUser.email}"></div>
+        <span th:if="${session.currentUser.role == admin}">
+        <link href="../admin.html" th:href="@{/admin.html}">
+        </span>
     </div>
 
     <div th:unless="${session.currentUser != null}">

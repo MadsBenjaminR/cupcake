@@ -76,8 +76,11 @@ public class UserController {
             //En meddelelse om, at brugeren er logget ind, tilføjes til attributterne i kontekstobjektet.
             ctx.attribute("message", "du er nu logget ind");
             //Til sidst renderes en HTML-side, som brugeren vil blive videresendt til efter vellykket login.
-          
-            ctx.redirect("admin.html");
+          if (user.getRole().equalsIgnoreCase("admin")) {
+              ctx.redirect("admin.html");
+          } else {
+              ctx.render("index");
+          }
 
         }
         catch (DatabaseException e){

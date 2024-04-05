@@ -1,0 +1,19 @@
+Index: src/main/java/app/controllers/CreditController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package app.controllers;\n\nimport app.exceptions.DatabaseException;\nimport app.persistence.ConnectionPool;\nimport app.persistence.CreditMapper;\nimport io.javalin.Javalin;\nimport io.javalin.http.Context;\n\n/**\n * Purpose:\n *\n * @author: Jeppe Koch\n */\npublic class CreditController {\n    public static void addRoutes(Javalin app, ConnectionPool connectionPool){\n        app.post(\"/addCredit\", ctx -> addCredit(ctx, connectionPool));\n\n    }\n\n\n    public static void addCredit(Context ctx, ConnectionPool connectionPool){\n\n        String email = ctx.formParam(\"email\");\n        int balance = Integer.parseInt(ctx.formParam(\"balance\"));\n\n        try{\n            CreditMapper.addCredit(email, balance, connectionPool);\n            ctx.attribute(\"kredit er overført til \" + email);\n            //ctx.render(\"\");\n        }catch (DatabaseException e){\n            ctx.attribute(\"message\", \"kredit kunne ikke indsættes\");\n            //ctx.render(\"\");\n        }\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/app/controllers/CreditController.java b/src/main/java/app/controllers/CreditController.java
+--- a/src/main/java/app/controllers/CreditController.java	(revision 330697e5759339f88eedace5f935a8908669d502)
++++ b/src/main/java/app/controllers/CreditController.java	(date 1712229055964)
+@@ -13,7 +13,7 @@
+  */
+ public class CreditController {
+     public static void addRoutes(Javalin app, ConnectionPool connectionPool){
+-        app.post("/addCredit", ctx -> addCredit(ctx, connectionPool));
++        app.post("/admin", ctx -> addCredit(ctx, connectionPool));
+ 
+     }
+ 
