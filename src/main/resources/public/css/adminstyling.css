@@ -1,0 +1,125 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #54037A;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.table{
+    color: white;
+}
+.picture-logo{
+    margin-top: -10px;
+    top: 21px;
+    height: auto;
+    width: 171px;
+    margin-left: -733px;
+    position: absolute;
+
+}
+
+.table{
+    justify-content: space-between;
+}
+
+    .orange-border {
+        border-top: 35px solid #F06C41;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .light-orange-border {
+        border-top: 35px solid #E68C52;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .pink-border {
+        border-top: 35px solid #CA4267;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .page {
+            min-width: 300px;
+        }
+    }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #E68C52;
+}
+
+
+#table-styling {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table-styling td, #table-styling th {
+    border: 1px solid #E68C52;
+    padding: 8px;
+}
+
+
+#table-styling tr:hover {background-color: rgba(226, 96, 38, 0.66);}
+
+#table-styling th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #F06C41;
+}
+
+input[type=text], [type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.creditadded{
+    width: 50%;
+    background-color: #CA4267;
+    color: white;
+    border: 2px solid #CA4267;
+    font-size: 12px;
+    padding: 12px 28px;
+    border-radius: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.creditadded:hover {
+    box-shadow: 0 12px 16px 0 rgb(230, 140, 82), 0 17px 50px 0 rgb(230, 140, 82);
+
+}
+
+
+.creditcontainer{
+  text-align: center;
+    border: 2px;
+    padding: 20px;
+
+}

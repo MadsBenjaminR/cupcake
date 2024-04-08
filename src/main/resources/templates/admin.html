@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <title>Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../public/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet"/>
+    <link href="../public/css/adminstyling.css" th:href="@{/css/adminstyling.css}" rel="stylesheet"/>
 </head>
 <body>
 
+<div class="orange-border"></div>
+<div class="light-orange-border"></div>
+<div class="pink-border"></div>
 
 
 <div class="page">
-    <a href="../login.html" th:href="@{/login}">
-        <img alt="logo" src="../public/images/Olsker_logo.png"
-             th:src="@{/images/Olsker_logo.png} " width="20%/>
-    </a>
+  
+    <div>
+        <a href="../templates/createacupcake.html" th:href="@{/}">
+            <img class="picture-logo" alt="logo" src="../public/images/Olsker_logo.png" th:src="@{/images/Olsker_logo.png}"/>
+        </a>
+
+    </div>
+    <div class="container">
+    <div class="creditcontainer">
 
     <form class="generic-form"  method="post">
         <input type="text" name="balance" placeholder="add credit"/>
@@ -22,17 +30,16 @@
 
         <button class="creditadded btn-ok" type="submit" formaction="/admin">add credit</button>
         <div><p class="error" th:unless="${#strings.isEmpty(message)}" th:text="${message}"></p></div>
-
-
     </form>
-
+    </div>
+    </div>
 <form class="table" id="table-styling" method="post">
     <table class="task-table">
         <thead>
         <tr>
-            <th>Orderline ID</th>
-            <th>Orderline Quantity</th>
-            <th>Orderline Price</th>
+            <th>ID</th>
+            <th>Quantity</th>
+            <th>Price</th>
             <th>Email</th>
         </tr>
         </thead>
@@ -43,10 +50,13 @@
             <td th:text="${orderline.price}"></td>
             <td th:text="${orderline.email}"></td>
         </tr>
+
         </tbody>
     </table>
 </form>
 </div>
+
+
 
 </body>
 </html>
