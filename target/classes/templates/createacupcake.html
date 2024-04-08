@@ -4,32 +4,26 @@
     <meta charset="UTF-8">
     <title>create a cupcake</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../public/css/stylesheetcupcake.css" th:href="@{/css/stylesheetcupcake.css}" rel="stylesheet"/>
+    <link href="../public/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet"/>
 </head>
 <body>
 
 <td>
     <div th:if="${session.currentUser != null}">
-        <p th:text="${session.currentUser.email}"></p>
-        <div class="orange-border"></div>
+        <div th:text="${session.currentUser.email}"></div>
     </div>
 
     <div th:unless="${session.currentUser != null}">
-
-
         <form class="generic form" method="get">
-            <div class="button">
-            <button class="loginbutton" type="submit" formaction="/index" >Login</button>
-            <div class="orange-border"></div>
-
-        </div>
+            <button class="btn btn-ok" type="button" formaction="/login">Login</button>
         </form>
     </div>
 </td>
+<div class="orange-border"></div>
 <div class="light-orange-border"></div>
 <div class="pink-border"></div>
 
-<img class="picture" alt="logo" src="../../resources/public/images/Olsker_logo.png" th:src="@{/images/Olsker_logo.png}"/>
+<img class="picture" alt="logo" src="../../resources/public/images/Olsker_logo.png"/>
 <div class="container">
     <form id="dropdowns" method="post">
         <div class="dropdown-container">

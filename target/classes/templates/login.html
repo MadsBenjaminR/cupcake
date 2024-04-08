@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<title>Frontpage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../public/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet"/>
+</head>
+
+<body>
+
+
+<td>
+    <div th:if="${session.currentUser != null}">
+        <div th:text="${session.currentUser.email}"></div>
+    </div>
+
+    <div th:unless="${session.currentUser != null}">
+        <button class="btn btn-ok" type="submit" formaction="/login">Login</button>
+    </div>
+</td>
+
+<div class="page">
+    <header>
+        <a href="index.html" th:href="@{/}">
+            <img alt="logo" src="../public/images/Olsker_logo.png" th:src="@{/images/bro.jpg}" width="20%"/>
+        </a>
+    </header>
+
+
+
+    <form class="generic-form" method="post">
+        <input type="text" name="email" placeholder="Enter your username"/>
+        <input type="password" name="password" placeholder="Enter your password"/>
+        <button class="btn btn-ok" type="submit" formaction="/login">Login</button>
+        <div><p class="error" th:unless="${#strings.isEmpty(message)}" th:text="${message}"></p></div>
+    </form>
+
+
+</div>
+</body>
+</html>
