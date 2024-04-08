@@ -8,7 +8,7 @@ h1 {
 body, html {
     height: 100%;
     margin: 0;
-background-color: #ae42d5;
+background-color: #54037A;
 }
 
 .container {
@@ -52,16 +52,16 @@ background-color: #ae42d5;
     margin-top: 50px; /* Adjust as needed */
 }
 .orange-border {
-    border-top: 30px solid orange;
+    border-top: 30px solid #F06C41;
     width: 100%;
 }
 
 .light-orange-border {
-    border-top: 30px solid lightcoral;
+    border-top: 30px solid  #E68C52;
     width: 100%;
 }
 
 .pink-border {
-    border-top: 30px solid pink;
+    border-top: 30px solid #CA4267;
     width: 100%;
 }
