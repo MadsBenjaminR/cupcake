@@ -28,12 +28,9 @@ public class  Main
         }).start(7070);
 
         // Routing
-
         CartLineController.addRoutes(app,connectionPool);
         UserController.addRoutes(app,connectionPool);
         OrderlineController.addRoutes(app,connectionPool);
         CreditController.addRoutes(app,connectionPool);
-
-
     }
 }
