@@ -44,24 +44,21 @@
     </table>
 </form>
 
-
-<div class="flex-box-sum-buy">
-    <div class="sum">
-        <button th:text="${session.sum}" id="sumText"></button>
-        <!--  <p th:text="${session.totalitems}" id="sumTextt"></p> -->
-    </div>
+<div class="sum">
+    <button th:text="${session.sum}" id="sumText"></button>
+  <!--  <p th:text="${session.totalitems}" id="sumTextt"></p> -->
+</div>
 
 
-    <div class="buy-login">
-        <div class="buy-button">
-            <div th:if="${session.currentUser != null}">
-                <button class="payButton" type="submit" name="pay" formaction="/pay">Pay using wallet</button>
-            </div>
+<div class="buy-login">
+    <div class="buy-button">
+        <div th:if="${session.currentUser != null}">
+            <button class="payButton" type="submit" name="pay" formaction="/pay">Pay using wallet</button>
         </div>
-        <div class="need-login-text">
-            <div th:unless="${session.currentUser != null}" class="logInToPurchase">
-                <p>You need to log in to make a purchase</p>
-            </div>
+    </div>
+    <div class="need-login-text">
+        <div th:unless="${session.currentUser != null}" class="logInToPurchase">
+            <p>You need to log in to purchase</p>
         </div>
     </div>
 </div>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>create a cupcake</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../public/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet"/>
+</head>
+<body>
+
+<td>
+    <div th:if="${session.currentUser != null}">
+        <div th:text="${session.currentUser.email}"></div>
+    </div>
+
+    <div th:unless="${session.currentUser != null}">
+        <form class="generic form" method="get">
+            <button class="btn btn-ok" type="button" formaction="/login">Login</button>
+        </form>
+    </div>
+</td>
+<div class="orange-border"></div>
+<div class="light-orange-border"></div>
+<div class="pink-border"></div>
+
+<img class="picture" alt="logo" src="../../resources/public/images/Olsker_logo.png"/>
+<div class="container">
+    <form id="dropdowns" method="post">
+        <div class="dropdown-container">
+            <select name="bottom" id="bottom" th:required="true">
+                <option value="" disabled selected>Vælg bund...</option>
+                <option
+                        th:each="bottom : ${bottoms}"
+                        th:value="${bottom.id}"
+                        th:name="${bottom_id}"
+                        th:text="${bottom.name + ' ' + bottom.price + 'kr'}">
+                    bottom
+                </option>
+            </select>
+            <select name="top" id="top" th:required="true">
+                <option value="" disabled selected>Vælg top...</option>
+                <option
+                        th:each=" top : ${toppings}"
+                        th:value="${top.id}"
+                        th:name="${topping_id}"
+                        th:text="${top.name + ' ' + top.price + 'kr'}">
+                    top
+                </option>
+            </select>
+            <div class="Vælg-antal" >
+                <select name="quantity" th:required="true">
+                    <option value="" disabled selected hidden>Antal</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="35">35</option>
+                    <option value="40">40</option>
+                    <option value="55">55</option>
+                </select>
+            </div>
+        </div>
+        <div class="submit-button">
+            <input type="submit" value="læg i kurv" formaction="/cart">
+        </div>
+    </form>
+</div>
