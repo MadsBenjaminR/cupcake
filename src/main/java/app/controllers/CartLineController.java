@@ -86,15 +86,16 @@ public class CartLineController {
     public static void insertInhistory(Context ctx, ConnectionPool connectionPool) throws DatabaseException {
         try {
             User user = ctx.sessionAttribute("currentUser");
-            List<CartLine> alllines = Cart.getCartLines();
-            System.out.println(alllines.size());
+            List<CartLine> allCartlines = Cart.getCartLines();
+            System.out.println(allCartlines.size());
             int totalsum = Cart.getTotal();
             boolean result = OrderlineMapper.deductFromBalance(user, totalsum, connectionPool);
             if (result) {
                 int orderId = OrderlineMapper.makeAnOrder(totalsum, user, connectionPool);
-                for (CartLine allline : alllines) {
+                for (CartLine allline : allCartlines) {
                     OrderlineMapper.inSertOrderHistory(allline.getTotal(), orderId, allline.getQuantity(), allline.getTop().getId(), allline.getBottom().getId(), connectionPool);
                 }
+                ctx.render("recept.html");
             }
         } catch (SQLException | DatabaseException e) {
             throw new DatabaseException("Database error.");

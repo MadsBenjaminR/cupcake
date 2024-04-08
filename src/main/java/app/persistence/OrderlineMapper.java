@@ -139,7 +139,7 @@ public class OrderlineMapper {
 
         int orderId = 0;
 
-        String sql="INSERT INTO public.order(price, user_id) VALUES (?, ?)";
+        String sql="INSERT INTO public.orders(price, user_id) VALUES (?, ?)";
 
         try (
                 Connection connection = connectionPool.getConnection();

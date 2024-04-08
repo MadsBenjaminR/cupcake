@@ -10,15 +10,6 @@
 <body>
 
 
-<td>
-    <div th:if="${session.currentUser != null}">
-        <div th:text="${session.currentUser.email}"></div>
-    </div>
-
-    <div th:unless="${session.currentUser != null}">
-        <button class="btn btn-ok" type="submit" formaction="/login">Login</button>
-    </div>
-</td>
 
 <td>
     <div th:if="${session.currentUser != null}">
@@ -42,9 +33,6 @@
         <button class="btn btn-ok" type="submit" formaction="/index">Register</button>
         <p>OR</p>
         <button class="btn btn-ok" type="submit" formaction="/login">Login</button>
-        <p>OR</p>
-        <button class="btn btn-ok" type="submit" formaction="/?">Continue without login</button>
-
 
         <div><p class="error" th:unless="${#strings.isEmpty(message)}" th:text="${message}"></p></div>
     </form>
