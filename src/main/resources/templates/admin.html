@@ -14,15 +14,11 @@
 
 
 <div class="page">
-  
-    <div>
-        <a href="../templates/createacupcake.html" th:href="@{/}">
-            <img class="picture-logo" alt="logo" src="../public/images/Olsker_logo.png" th:src="@{/images/Olsker_logo.png}"/>
-        </a>
 
-    </div>
-    <div class="container">
-    <div class="creditcontainer">
+    <a href="../createacupcake.html" th:href="@{/}">
+        <img alt="logo" src="../public/images/Olsker_logo.png"
+             th:src="@{/images/Olsker_logo.png} " width="20%"/>
+    </a>
 
     <form class="generic-form"  method="post">
         <input type="text" name="balance" placeholder="add credit"/>

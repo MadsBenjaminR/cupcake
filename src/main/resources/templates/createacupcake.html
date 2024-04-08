@@ -10,16 +10,20 @@
 
 <td>
     <div th:if="${session.currentUser != null}">
-        <div th:text="${session.currentUser.email}"></div>
+        <p th:text="${session.currentUser.email}"></p>
+        <div class="orange-border"></div>
     </div>
 
     <div th:unless="${session.currentUser != null}">
-        <div class="button">
-            <form class="generic form" method="get">
-                <button class="loginbutton" type="button" formaction="/login">Login</button>
-                <div class="orange-border"></div>
-            </form>
+
+
+        <form class="generic form" method="get">
+            <div class="button">
+            <button class="loginbutton" type="submit" formaction="/index" >Login</button>
+            <div class="orange-border"></div>
+
         </div>
+        </form>
     </div>
 </td>
 <div class="light-orange-border"></div>
