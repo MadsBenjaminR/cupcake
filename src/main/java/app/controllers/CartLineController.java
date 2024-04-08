@@ -92,13 +92,8 @@ public class CartLineController {
             boolean result = OrderlineMapper.deductFromBalance(user, totalsum, connectionPool);
             if (result) {
                 int orderId = OrderlineMapper.makeAnOrder(totalsum, user, connectionPool);
-                int lastIndex = alllines.size() - 1;
-                int quantity = alllines.get(lastIndex).getQuantity() + alllines.get(0).getQuantity();
-                int pricePrUnit = alllines.get(0).getTop().getPrice() + alllines.get(lastIndex).getBottom().getPrice();
-                int getTopId = alllines.get(0).getTop().getId();
-                int getBottomId = alllines.get(lastIndex).getBottom().getId();
-                for (int i = 0; i < alllines.size(); i++) {
-                    OrderlineMapper.inSertOrderHistory(pricePrUnit, orderId, quantity, getTopId, getBottomId, connectionPool);
+                for (CartLine allline : alllines) {
+                    OrderlineMapper.inSertOrderHistory(allline.getTotal(), orderId, allline.getQuantity(), allline.getTop().getId(), allline.getBottom().getId(), connectionPool);
                 }
             }
         } catch (SQLException | DatabaseException e) {

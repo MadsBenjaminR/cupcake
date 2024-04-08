@@ -25,4 +25,9 @@ public class CartLine {
     public int getQuantity() {
         return quantity;
     }
+
+    public int getTotal()
+    {
+        return (top.getPrice() + bottom.getPrice()) * quantity;
+    }
 }
