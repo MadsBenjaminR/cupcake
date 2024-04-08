@@ -14,16 +14,18 @@
     </div>
 
     <div th:unless="${session.currentUser != null}">
+        <div class="button">
         <form class="generic form" method="get">
-            <button class="btn btn-ok" type="button" formaction="/login">Login</button>
+            <button class="loginbutton" type="button" formaction="/login">Login</button>
+            <div class="orange-border"></div>
         </form>
+        </div>
     </div>
 </td>
-<div class="orange-border"></div>
 <div class="light-orange-border"></div>
 <div class="pink-border"></div>
 
-<img class="picture" alt="logo" src="../../resources/public/images/Olsker_logo.png"/>
+<img class="picture" alt="logo" src="../../resources/public/images/Olsker_logo.png" th:src="@{/images/Olsker_logo.png}"/>
 <div class="container">
     <form id="dropdowns" method="post">
         <div class="dropdown-container">

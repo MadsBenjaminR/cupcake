@@ -1,0 +1,77 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #54037A;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.centered-dropdowns {
+    text-align: center;
+}
+
+.centered-dropdowns select {
+    width: 300px;
+    padding: 10px;
+    margin: 5px auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit-container input[type="submit"] {
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+.dropdown-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Vælg-antal select {
+    margin-left: 50px;
+}
+
+.submit-container {
+    margin-top: 50px;
+}
+.orange-border {
+    border-top: 35px solid #F06C41;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.light-orange-border {
+    border-top: 35px solid  #E68C52;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.pink-border {
+    border-top: 35px solid #CA4267;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.picture{
+    top: 1px;
+    height: auto;
+    width: 172px;
+    position: absolute;
+
+}
+.loginbutton {
+    position: absolute;
+    margin-left: 1410px;
+    margin-top: 7px;
+
+}
