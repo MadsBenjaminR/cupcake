@@ -8,6 +8,8 @@ import app.persistence.OrderlineMapper;
 import io.javalin.Javalin;
 import io.javalin.http.Context;
 
+import javax.xml.crypto.Data;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -81,37 +83,26 @@ public class CartLineController {
 
     }
 
-    public static void insertInhistory(Context ctx, ConnectionPool connectionPool) {
-
-        User user = ctx.sessionAttribute("currentUser");
-        int totalsum = 0;
-
-
+    public static void insertInhistory(Context ctx, ConnectionPool connectionPool) throws DatabaseException {
         try {
+            User user = ctx.sessionAttribute("currentUser");
             List<CartLine> alllines = Cart.getCartLines();
             System.out.println(alllines.size());
-
-             totalsum =Cart.getTotal();
-           int orderId = OrderlineMapper.makeAnOrder(totalsum,user,connectionPool);
-
-
-            OrderlineMapper.deductFromBalance(user,totalsum,connectionPool);
-
-
+            int totalsum = Cart.getTotal();
+            boolean result = OrderlineMapper.deductFromBalance(user, totalsum, connectionPool);
+            if (result) {
+                int orderId = OrderlineMapper.makeAnOrder(totalsum, user, connectionPool);
                 int lastIndex = alllines.size() - 1;
                 int quantity = alllines.get(lastIndex).getQuantity() + alllines.get(0).getQuantity();
                 int pricePrUnit = alllines.get(0).getTop().getPrice() + alllines.get(lastIndex).getBottom().getPrice();
                 int getTopId = alllines.get(0).getTop().getId();
                 int getBottomId = alllines.get(lastIndex).getBottom().getId();
-
                 for (int i = 0; i < alllines.size(); i++) {
                     OrderlineMapper.inSertOrderHistory(pricePrUnit, orderId, quantity, getTopId, getBottomId, connectionPool);
                 }
-
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+            }
+        } catch (SQLException | DatabaseException e) {
+            throw new DatabaseException("Database error.");
         }
     }
 }
-
-    
