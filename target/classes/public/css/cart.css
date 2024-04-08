@@ -1,0 +1,178 @@
+/* Stylesheet for the application */
+
+h1 {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #54037A;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.centered-dropdowns {
+    text-align: center;
+}
+
+.centered-dropdowns select {
+    width: 300px;
+    padding: 10px;
+    margin: 5px auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Increase button size */
+.submit-container input[type="submit"] {
+    padding: 15px 30px; /* Adjust padding as needed */
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+.dropdown-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Horizontally center the dropdowns */
+}
+
+.Vælg-antal select {
+    margin-left: 50px; /* Adjust as needed */
+}
+
+.submit-container {
+    margin-top: 50px; /* Adjust as needed */
+}
+
+.orange-border {
+    border-top: 30px solid #F06C41;
+    width: 100%;
+}
+
+.light-orange-border {
+    border-top: 30px solid #E68C52;
+    width: 100%;
+}
+
+.pink-border {
+    border-top: 30px solid #CA4267;
+    width: 100%;
+}
+
+.edit-item-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 400px;
+    gap: 10px;
+}
+
+.edit-item-form input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #CA4267;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* BOXES*/
+
+.large-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.add-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.add-item-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-item-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.scrollable-table {
+    width: 100%;
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #F06C41;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #CA4267;
+}
+
+th {
+    background-color: #F06C41;
+}
+
+#table-styling {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table-styling td, #table-styling th {
+    border: 1px solid #CA4267;
+    padding: 8px;
+}
+
+#table-styling tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#table-styling tr:hover {
+    background-color: #E68C52
+}
+
+#table-styling th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #F06C41;
+    color: white;
+}
+
+.buy-login {
+    position: absolute;
+    left: 90%;
+    color: white;
+}
+.sum{
+position: relative;
+    left: 90%;
+    color: white;
+}
