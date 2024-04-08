@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>create a cupcake</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../public/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet"/>
+    <link href="../public/css/stylesheetcupcake.css" th:href="@{/css/stylesheetcupcake.css}" rel="stylesheet"/>
 </head>
 <body>
 
@@ -15,10 +15,10 @@
 
     <div th:unless="${session.currentUser != null}">
         <div class="button">
-        <form class="generic form" method="get">
-            <button class="loginbutton" type="button" formaction="/login">Login</button>
-            <div class="orange-border"></div>
-        </form>
+            <form class="generic form" method="get">
+                <button class="loginbutton" type="button" formaction="/login">Login</button>
+                <div class="orange-border"></div>
+            </form>
         </div>
     </div>
 </td>
