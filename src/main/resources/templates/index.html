@@ -4,11 +4,14 @@
 <title>Frontpage</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="../public/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet"/>
+<link href="../public/css/indexstyling.css" th:href="@{/css/indexstyling.css}" rel="stylesheet"/>
 </head>
 
 <body>
-
+<div class="orange-border"></div>
+<div class="light-orange-border"></div>
+<div class="pink-border"></div>
+<img class="picture" alt="logo" src="../../resources/public/images/Olsker_logo.png" th:src="@{/images/Olsker_logo.png}"/>
 
 <td>
     <div th:if="${session.currentUser != null}">

@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fcbf74c7-c57b-4c47-9b56-bf482801a3af" name="Changes" comment="userStory01">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/css/indexstyling.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d6f25c6c-5e04-4042-965e-19d806fc8060.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_04_2024__09_21__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_04_2024__09_21__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2024_10_59__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_04_2024__09_20__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_04_2024__09_20__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/OrderlineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/OrderlineController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/entities/Orderline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/entities/Orderline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/persistence/OrderlineMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/persistence/OrderlineMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/stylesheetcupcake.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/css/stylesheetcupcake.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/createacupcake.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/createacupcake.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,9 +26,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -36,9 +40,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -60,7 +64,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "US-07",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "indexstyling",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/mingo/Desktop/sem2/Cupcake01/src/main/resources/public/images",
     "list.type.of.created.stylesheet": "CSS",
@@ -103,6 +108,7 @@
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -122,6 +128,8 @@
       <option name="presentableId" value="Default" />
       <updated>1712129618896</updated>
       <workItem from="1712129619957" duration="4927000" />
+      <workItem from="1712567050234" duration="357000" />
+      <workItem from="1712567561026" duration="4998000" />
     </task>
     <task id="LOCAL-00001" summary="første">
       <option name="closed" value="true" />
@@ -202,16 +210,5 @@
     <MESSAGE value="gittest" />
     <MESSAGE value="userStory01" />
     <option name="LAST_COMMIT_MESSAGE" value="userStory01" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/app/persistence/OrderlineMapper.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

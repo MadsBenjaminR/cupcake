@@ -1,0 +1,45 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #54037A;
+}
+
+.generic-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+p{
+    color: #ffffff;
+}
+
+.orange-border {
+    border-top: 35px solid #F06C41;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.light-orange-border {
+    border-top: 35px solid  #E68C52;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.pink-border {
+    border-top: 35px solid #CA4267;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.picture{
+    top: 1px;
+    height: auto;
+    width: 172px;
+    position: absolute;
+
+}
+
