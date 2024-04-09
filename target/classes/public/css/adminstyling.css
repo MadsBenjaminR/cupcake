@@ -16,18 +16,19 @@ body, html {
 .table{
     color: white;
 }
+.picture-logo{
+    margin-top: -10px;
+    top: 21px;
+    height: auto;
+    width: 171px;
+    margin-left: -733px;
+    position: absolute;
 
+}
 
 .table{
     justify-content: space-between;
 }
-
- .picture-logo {
-        width: 20%; /* Adjust width as needed */
-        max-width: 200px; /* Adjust maximum width */
-        height: auto; /* Maintain aspect ratio */
-}
-
 
     .orange-border {
         border-top: 35px solid #F06C41;
@@ -115,17 +116,10 @@ input[type=text], [type=text] {
 
 }
 
-.flexbox-container {
-    display: flex;
-    justify-content: center;
-}
 
-.flexboxcredit{
-    display: flex;
-    text-align: center;
+.creditcontainer{
+  text-align: center;
     border: 2px;
     padding: 20px;
 
 }
-
-

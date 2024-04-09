@@ -125,6 +125,7 @@ body, html {
 }
 
 table {
+    position: relative;
     width: 100%;
     border-collapse: collapse;
 }
@@ -166,13 +167,33 @@ th {
     color: white;
 }
 
+.email-login-button {
+    display: flex;
+    position: absolute; /* Change to absolute positioning */
+    left: 90%;
+    top: 10%;
+    transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+}
+
+.flex-box-sum-buy{
+    display: flex;
+    flex-direction: column;
+}
+
+.sum {
+    display: flex;
+    position: absolute; /* Change to absolute positioning */
+    left: 90%;
+    top: 40%;
+    transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+}
+
 .buy-login {
-    position: absolute;
+    display: flex;
+    position: absolute; /* Change to absolute positioning */
     left: 90%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
     color: white;
 }
-.sum{
-position: relative;
-    left: 90%;
-    color: white;
-}
+
