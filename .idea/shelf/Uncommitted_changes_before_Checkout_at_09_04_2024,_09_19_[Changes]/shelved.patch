@@ -1,0 +1,537 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"fcbf74c7-c57b-4c47-9b56-bf482801a3af\" name=\"Changes\" comment=\"userStory01\">\n      <change beforePath=\"$PROJECT_DIR$/.gitignore\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/.gitignore\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/dataSources.local.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/dataSources.local.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/dataSources/d6f25c6c-5e04-4042-965e-19d806fc8060.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/dataSources/d6f25c6c-5e04-4042-965e-19d806fc8060.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_04_2024__09_21__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_04_2024__09_21__Changes_.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_04_2024__09_21__Changes_1.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_04_2024__09_21__Changes_1.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_04_2024__16_45__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_04_2024__16_45__Changes_.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2024_10_59__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2024_10_59__Changes_.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2024__10_35__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2024__10_35__Changes_.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2024__10_36__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2024__10_36__Changes_.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2024__11_01__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2024__11_01__Changes_.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_04_2024__09_20__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_04_2024__09_20__Changes_.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_04_2024__09_20__Changes_1.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_04_2024__09_20__Changes_1.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_04_2024__09_37__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_04_2024__09_37__Changes_.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_04_2024__09_37__Changes_1.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_04_2024__09_37__Changes_1.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/public/css/cart.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/public/css/cart.css\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/templates/cart.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/templates/cart.html\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"CSS File\" />\n        <option value=\"HTML File\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GithubProjectSettings\">\n    <option name=\"branchProtectionPatterns\">\n      <list>\n        <option value=\"main\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"KubernetesApiProvider\">{\n  &quot;isMigrated&quot;: true\n}</component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 4\n}</component>\n  <component name=\"ProjectId\" id=\"2ea4zVo1fKxnmoYbSdHDyEYHMbt\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\n    \"Application.Main.executor\": \"Run\",\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\n    \"git-widget-placeholder\": \"cart-css-2.0\",\n    \"jdk.selected.JAVA_MODULE\": \"openjdk-21\",\n    \"kotlin-language-version-configured\": \"true\",\n    \"last_opened_file_path\": \"/Users/mingo/Desktop/sem2/Cupcake01/src/main/resources/public/images\",\n    \"list.type.of.created.stylesheet\": \"CSS\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"project.structure.last.edited\": \"SDKs\",\n    \"project.structure.proportion\": \"0.21875\",\n    \"project.structure.side.proportion\": \"0.2\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  },\n  \"keyToStringList\": {\n    \"DatabaseDriversLRU\": [\n      \"postgresql\"\n    ]\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/main/resources/public/images\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\benja\\Documents\\Semester2\\Projects\\cupcake\\cupcake\\.idea\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"app.Main\" />\n      <module name=\"cupcake\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"app.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.Main\" />\n        <item itemvalue=\"Application.Main\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"jdk-17.0.10-corretto-17.0.10-3183f394aec4-cf227e86\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"fcbf74c7-c57b-4c47-9b56-bf482801a3af\" name=\"Changes\" comment=\"\" />\n      <created>1712129618896</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1712129618896</updated>\n      <workItem from=\"1712129619957\" duration=\"4927000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"første\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712129853190</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712129853190</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"mapper\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712132205274</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712132205274</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"mapper\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712132217437</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712132217437</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"mapper\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712133338901</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712133338901</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"mapper\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712133576241</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712133576241</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"gittest\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712133812146</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712133812146</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"userStory01\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1712214632474</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1712214632474</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"8\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"første\" />\n    <MESSAGE value=\"mapper\" />\n    <MESSAGE value=\"gittest\" />\n    <MESSAGE value=\"userStory01\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"userStory01\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/main/java/app/persistence/OrderlineMapper.java</url>\n          <line>31</line>\n          <option name=\"timeStamp\" value=\"3\" />\n        </line-breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,24 +5,21 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="fcbf74c7-c57b-4c47-9b56-bf482801a3af" name="Changes" comment="userStory01">
+-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d6f25c6c-5e04-4042-965e-19d806fc8060.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d6f25c6c-5e04-4042-965e-19d806fc8060.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_04_2024__09_21__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_04_2024__09_21__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_04_2024__09_21__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_04_2024__09_21__Changes_1.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_04_2024__16_45__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_04_2024__16_45__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2024_10_59__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2024_10_59__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2024__10_35__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2024__10_35__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2024__10_36__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2024__10_36__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2024__11_01__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2024__11_01__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_04_2024__09_20__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_04_2024__09_20__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_04_2024__09_20__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_04_2024__09_20__Changes_1.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_04_2024__09_37__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_04_2024__09_37__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_04_2024__09_37__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_04_2024__09_37__Changes_1.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d6f25c6c-5e04-4042-965e-19d806fc8060.xml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/css/cart.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/cart.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/CartLineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/CartLineController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/CartLineController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/CartLineController.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/app/entities/CartLine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/entities/CartLine.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/app/persistence/OrderlineMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/persistence/OrderlineMapper.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/public/css/cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/css/cart.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/css/styles.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/public/images/Olsker logo.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/cart.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/templates/createacupcake.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/createacupcake.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -32,9 +29,9 @@
+   <component name="FileTemplateManagerImpl">
+     <option name="RECENT_TEMPLATES">
+       <list>
+-        <option value="CSS File" />
+         <option value="HTML File" />
+         <option value="Class" />
++        <option value="CSS File" />
+       </list>
+     </option>
+   </component>
+@@ -45,13 +42,6 @@
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-  </component>
+-  <component name="GithubProjectSettings">
+-    <option name="branchProtectionPatterns">
+-      <list>
+-        <option value="main" />
+-      </list>
+-    </option>
+   </component>
+   <component name="KubernetesApiProvider">{
+   &quot;isMigrated&quot;: true
+@@ -77,8 +67,8 @@
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "git-widget-placeholder": "cart-css-2.0",
+-    "jdk.selected.JAVA_MODULE": "openjdk-21",
++    "WebServerToolWindowFactoryState": "false",
++    "git-widget-placeholder": "backup-main",
+     "kotlin-language-version-configured": "true",
+     "last_opened_file_path": "/Users/mingo/Desktop/sem2/Cupcake01/src/main/resources/public/images",
+     "list.type.of.created.stylesheet": "CSS",
+@@ -102,9 +92,6 @@
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/src/main/resources/public/images" />
+     </key>
+-    <key name="MoveFile.RECENT_KEYS">
+-      <recent name="C:\Users\benja\Documents\Semester2\Projects\cupcake\cupcake\.idea" />
+-    </key>
+   </component>
+   <component name="RunManager">
+     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+@@ -124,6 +111,9 @@
+       <list>
+         <item itemvalue="Application.Main" />
+         <item itemvalue="Application.Main" />
++        <item itemvalue="Application.Main" />
++        <item itemvalue="Application.Main" />
++        <item itemvalue="Application.Main" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -143,6 +133,8 @@
+       <option name="presentableId" value="Default" />
+       <updated>1712129618896</updated>
+       <workItem from="1712129619957" duration="4927000" />
++      <workItem from="1712567050234" duration="357000" />
++      <workItem from="1712567561026" duration="4998000" />
+     </task>
+     <task id="LOCAL-00001" summary="første">
+       <option name="closed" value="true" />
+Index: .idea/dataSources.local.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"dataSourceStorageLocal\" created-in=\"IU-233.11799.300\">\n    <data-source name=\"cupcake@localhost\" uuid=\"7ef957c1-a6c2-4e96-9462-b4fb6c016818\">\n      <database-info product=\"PostgreSQL\" version=\"16.2 (Debian 16.2-1.pgdg120+2)\" jdbc-version=\"4.2\" driver-name=\"PostgreSQL JDBC Driver\" driver-version=\"42.6.0\" dbms=\"POSTGRES\" exact-version=\"16.2\" exact-driver-version=\"42.6\">\n        <identifier-quote-string>&quot;</identifier-quote-string>\n      </database-info>\n      <case-sensitivity plain-identifiers=\"lower\" quoted-identifiers=\"exact\" />\n      <secret-storage>master_key</secret-storage>\n      <user-name>postgres</user-name>\n      <schema-mapping>\n        <introspection-scope>\n          <node kind=\"database\" qname=\"@\">\n            <node kind=\"schema\" qname=\"@\" />\n          </node>\n        </introspection-scope>\n      </schema-mapping>\n    </data-source>\n    <data-source name=\"cupcake@localhost [2]\" uuid=\"d6f25c6c-5e04-4042-965e-19d806fc8060\">\n      <database-info product=\"PostgreSQL\" version=\"16.2 (Debian 16.2-1.pgdg120+2)\" jdbc-version=\"4.2\" driver-name=\"PostgreSQL JDBC Driver\" driver-version=\"42.6.0\" dbms=\"POSTGRES\" exact-version=\"16.2\" exact-driver-version=\"42.6\">\n        <identifier-quote-string>&quot;</identifier-quote-string>\n      </database-info>\n      <case-sensitivity plain-identifiers=\"lower\" quoted-identifiers=\"exact\" />\n      <secret-storage>master_key</secret-storage>\n      <user-name>postgres</user-name>\n      <schema-mapping>\n        <introspection-scope>\n          <node kind=\"database\" qname=\"@\">\n            <node kind=\"schema\" qname=\"@\" />\n          </node>\n        </introspection-scope>\n      </schema-mapping>\n    </data-source>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dataSources.local.xml b/.idea/dataSources.local.xml
+--- a/.idea/dataSources.local.xml	
++++ b/.idea/dataSources.local.xml	
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="dataSourceStorageLocal" created-in="IU-233.11799.300">
++  <component name="dataSourceStorageLocal" created-in="IU-232.10227.8">
+     <data-source name="cupcake@localhost" uuid="7ef957c1-a6c2-4e96-9462-b4fb6c016818">
+       <database-info product="PostgreSQL" version="16.2 (Debian 16.2-1.pgdg120+2)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.6.0" dbms="POSTGRES" exact-version="16.2" exact-driver-version="42.6">
+         <identifier-quote-string>&quot;</identifier-quote-string>
+Index: target/classes/templates/createacupcake.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>create a cupcake</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <link href=\"../public/css/styles.css\" th:href=\"@{/css/styles.css}\" rel=\"stylesheet\"/>\n</head>\n<body>\n\n<td>\n    <div th:if=\"${session.currentUser != null}\">\n        <div th:text=\"${session.currentUser.email}\"></div>\n    </div>\n\n    <div th:unless=\"${session.currentUser != null}\">\n        <form class=\"generic form\" method=\"get\">\n            <button class=\"btn btn-ok\" type=\"button\" formaction=\"/login\">Login</button>\n        </form>\n    </div>\n</td>\n<div class=\"orange-border\"></div>\n<div class=\"light-orange-border\"></div>\n<div class=\"pink-border\"></div>\n\n<img class=\"picture\" alt=\"logo\" src=\"../../resources/public/images/Olsker_logo.png\"/>\n<div class=\"container\">\n    <form id=\"dropdowns\" method=\"post\">\n        <div class=\"dropdown-container\">\n            <select name=\"bottom\" id=\"bottom\" th:required=\"true\">\n                <option value=\"\" disabled selected>Vælg bund...</option>\n                <option\n                        th:each=\"bottom : ${bottoms}\"\n                        th:value=\"${bottom.id}\"\n                        th:name=\"${bottom_id}\"\n                        th:text=\"${bottom.name + ' ' + bottom.price + 'kr'}\">\n                    bottom\n                </option>\n            </select>\n            <select name=\"top\" id=\"top\" th:required=\"true\">\n                <option value=\"\" disabled selected>Vælg top...</option>\n                <option\n                        th:each=\" top : ${toppings}\"\n                        th:value=\"${top.id}\"\n                        th:name=\"${topping_id}\"\n                        th:text=\"${top.name + ' ' + top.price + 'kr'}\">\n                    top\n                </option>\n            </select>\n            <div class=\"Vælg-antal\" >\n                <select name=\"quantity\" th:required=\"true\">\n                    <option value=\"\" disabled selected hidden>Antal</option>\n                    <option value=\"1\">1</option>\n                    <option value=\"2\">2</option>\n                    <option value=\"3\">3</option>\n                    <option value=\"4\">4</option>\n                    <option value=\"5\">5</option>\n                    <option value=\"10\">10</option>\n                    <option value=\"20\">20</option>\n                    <option value=\"30\">30</option>\n                    <option value=\"35\">35</option>\n                    <option value=\"40\">40</option>\n                    <option value=\"55\">55</option>\n                </select>\n            </div>\n        </div>\n        <div class=\"submit-button\">\n            <input type=\"submit\" value=\"læg i kurv\" formaction=\"/cart\">\n        </div>\n    </form>\n</div>\n
+===================================================================
+diff --git a/target/classes/templates/createacupcake.html b/target/classes/templates/createacupcake.html
+--- a/target/classes/templates/createacupcake.html	
++++ b/target/classes/templates/createacupcake.html	
+@@ -4,26 +4,32 @@
+     <meta charset="UTF-8">
+     <title>create a cupcake</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <link href="../public/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet"/>
++    <link href="../public/css/stylesheetcupcake.css" th:href="@{/css/stylesheetcupcake.css}" rel="stylesheet"/>
+ </head>
+ <body>
+ 
+ <td>
+     <div th:if="${session.currentUser != null}">
+-        <div th:text="${session.currentUser.email}"></div>
++        <p th:text="${session.currentUser.email}"></p>
++        <div class="orange-border"></div>
+     </div>
+ 
+     <div th:unless="${session.currentUser != null}">
++
++
+         <form class="generic form" method="get">
+-            <button class="btn btn-ok" type="button" formaction="/login">Login</button>
++            <div class="button">
++            <button class="loginbutton" type="submit" formaction="/index" >Login</button>
++            <div class="orange-border"></div>
++
++        </div>
+         </form>
+     </div>
+ </td>
+-<div class="orange-border"></div>
+ <div class="light-orange-border"></div>
+ <div class="pink-border"></div>
+ 
+-<img class="picture" alt="logo" src="../../resources/public/images/Olsker_logo.png"/>
++<img class="picture" alt="logo" src="../../resources/public/images/Olsker_logo.png" th:src="@{/images/Olsker_logo.png}"/>
+ <div class="container">
+     <form id="dropdowns" method="post">
+         <div class="dropdown-container">
+Index: target/classes/templates/cart.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html lang=\"en\" xmlns:th=\"http://www.w3.org/1999/xhtml\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>cart</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <link href=\"../public/css/cart.css\" th:href=\"@{/css/cart.css}\" rel=\"stylesheet\"/>\n</head>\n<body>\n\n<img class=\"picture\" alt=\"logo\" src=\"../../resources/public/images/Olsker_logo.png\" width=\"20%\"/>\n\n<div class=\"email-login-button\">\n    <div th:if=\"${session.currentUser != null}\">\n        <div th:text=\"${session.currentUser.email}\"></div>\n    </div>\n\n    <div th:unless=\"${session.currentUser != null}\">\n        <form class=\"generic form\" method=\"get\">\n            <button class=\"btn btn-ok\" type=\"submit\" formaction=\"/index\">Login</button>\n        </form>\n        <p class=\"error\" th:unless=\"${#strings.isEmpty(message)}\" th:text=\"${message}\"></p>\n    </div>\n</div>\n\n<form class=\"table\" id=\"table-styling\" method=\"post\">\n    <table class=\"task-table\">\n        <thead>\n        <tr>\n            <th>Bottom</th>\n            <th>Top</th>\n            <th>Amount</th>\n            <th>Price</th>\n        </tr>\n        </thead>\n        <tbody>\n        <tr th:each=\"item, itterationStat: ${session.cart}\">\n            <td th:text=\"${item.Bottom.name}\"></td>\n            <td th:text=\"${item.Top.name}\"></td>\n            <td th:text=\"${item.quantity}\"></td>\n            <td th:text=\"${item.price}\"></td>\n        </tr>\n        </tbody>\n    </table>\n</form>\n\n<div class=\"sum\">\n    <button th:text=\"${session.sum}\" id=\"sumText\"></button>\n  <!--  <p th:text=\"${session.totalitems}\" id=\"sumTextt\"></p> -->\n</div>\n\n\n<div class=\"buy-login\">\n    <div class=\"buy-button\">\n        <div th:if=\"${session.currentUser != null}\">\n            <button class=\"payButton\" type=\"submit\" name=\"pay\" formaction=\"/pay\">Pay using wallet</button>\n        </div>\n    </div>\n    <div class=\"need-login-text\">\n        <div th:unless=\"${session.currentUser != null}\" class=\"logInToPurchase\">\n            <p>You need to log in to purchase</p>\n        </div>\n    </div>\n</div>\n\n</body>\n</html>
+===================================================================
+diff --git a/target/classes/templates/cart.html b/target/classes/templates/cart.html
+--- a/target/classes/templates/cart.html	
++++ b/target/classes/templates/cart.html	
+@@ -44,21 +44,24 @@
+     </table>
+ </form>
+ 
+-<div class="sum">
+-    <button th:text="${session.sum}" id="sumText"></button>
+-  <!--  <p th:text="${session.totalitems}" id="sumTextt"></p> -->
+-</div>
++
++<div class="flex-box-sum-buy">
++    <div class="sum">
++        <button th:text="${session.sum}" id="sumText"></button>
++        <!--  <p th:text="${session.totalitems}" id="sumTextt"></p> -->
++    </div>
+ 
+ 
+-<div class="buy-login">
+-    <div class="buy-button">
+-        <div th:if="${session.currentUser != null}">
+-            <button class="payButton" type="submit" name="pay" formaction="/pay">Pay using wallet</button>
+-        </div>
+-    </div>
+-    <div class="need-login-text">
+-        <div th:unless="${session.currentUser != null}" class="logInToPurchase">
+-            <p>You need to log in to purchase</p>
++    <div class="buy-login">
++        <div class="buy-button">
++            <div th:if="${session.currentUser != null}">
++                <button class="payButton" type="submit" name="pay" formaction="/pay">Pay using wallet</button>
++            </div>
++        </div>
++        <div class="need-login-text">
++            <div th:unless="${session.currentUser != null}" class="logInToPurchase">
++                <p>You need to log in to make a purchase</p>
++            </div>
+         </div>
+     </div>
+ </div>
+Index: target/classes/templates/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:th=\"http://www.thymeleaf.org\">\n\n<title>Frontpage</title>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<link href=\"../public/css/styles.css\" th:href=\"@{/css/styles.css}\" rel=\"stylesheet\"/>\n</head>\n\n<body>\n\n\n<td>\n    <div th:if=\"${session.currentUser != null}\">\n        <div th:text=\"${session.currentUser.email}\"></div>\n    </div>\n\n    <div th:unless=\"${session.currentUser != null}\">\n        <button class=\"btn btn-ok\" type=\"submit\" formaction=\"/login\">Login</button>\n    </div>\n</td>\n\n<td>\n    <div th:if=\"${session.currentUser != null}\">\n        <div th:text=\"${session.currentUser.email}\"></div>\n        <span th:if=\"${session.currentUser.role == admin}\">\n        <link href=\"../admin.html\" th:href=\"@{/admin.html}\">\n        </span>\n    </div>\n\n</td>\n\n\n<form method=\"post\">\n\n  \n    <form class=\"generic-form\" method=\"get\">\n        <input type=\"text\" name=\"email\" placeholder=\"Enter your email\"/>\n        <input type=\"password1\" name=\"password1\" placeholder=\"Enter your password\"/>\n        <input type=\"password2\" name=\"password2\" placeholder=\"Reenter your password\"/>\n\n        <button class=\"btn btn-ok\" type=\"submit\" formaction=\"/index\">Register</button>\n        <p>OR</p>\n        <button class=\"btn btn-ok\" type=\"submit\" formaction=\"/login\">Login</button>\n        <p>OR</p>\n        <button class=\"btn btn-ok\" type=\"submit\" formaction=\"/?\">Continue without login</button>\n\n\n        <div><p class=\"error\" th:unless=\"${#strings.isEmpty(message)}\" th:text=\"${message}\"></p></div>\n    </form>\n\n</form>\n</div>\n\n</body>\n</html>
+===================================================================
+diff --git a/target/classes/templates/index.html b/target/classes/templates/index.html
+--- a/target/classes/templates/index.html	
++++ b/target/classes/templates/index.html	
+@@ -4,21 +4,15 @@
+ <title>Frontpage</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-<link href="../public/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet"/>
++<link href="../public/css/indexstyling.css" th:href="@{/css/indexstyling.css}" rel="stylesheet"/>
+ </head>
+ 
+ <body>
+-
++<div class="orange-border"></div>
++<div class="light-orange-border"></div>
++<div class="pink-border"></div>
++<img class="picture" alt="logo" src="../../resources/public/images/Olsker_logo.png" th:src="@{/images/Olsker_logo.png}"/>
+ 
+-<td>
+-    <div th:if="${session.currentUser != null}">
+-        <div th:text="${session.currentUser.email}"></div>
+-    </div>
+-
+-    <div th:unless="${session.currentUser != null}">
+-        <button class="btn btn-ok" type="submit" formaction="/login">Login</button>
+-    </div>
+-</td>
+ 
+ <td>
+     <div th:if="${session.currentUser != null}">
+@@ -42,9 +36,6 @@
+         <button class="btn btn-ok" type="submit" formaction="/index">Register</button>
+         <p>OR</p>
+         <button class="btn btn-ok" type="submit" formaction="/login">Login</button>
+-        <p>OR</p>
+-        <button class="btn btn-ok" type="submit" formaction="/?">Continue without login</button>
+-
+ 
+         <div><p class="error" th:unless="${#strings.isEmpty(message)}" th:text="${message}"></p></div>
+     </form>
+Index: target/classes/templates/admin.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>Admin</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <link href=\"../public/css/styles.css\" th:href=\"@{/css/styles.css}\" rel=\"stylesheet\"/>\n</head>\n<body>\n\n\n\n<div class=\"page\">\n    <a href=\"../login.html\" th:href=\"@{/login}\">\n        <img alt=\"logo\" src=\"../public/images/Olsker_logo.png\"\n             th:src=\"@{/images/Olsker_logo.png} \" width=\"20%/>\n    </a>\n\n    <form class=\"generic-form\"  method=\"post\">\n        <input type=\"text\" name=\"balance\" placeholder=\"add credit\"/>\n        <input type=\"text\" name=\"email\" placeholder=\"who gets the credit?\"/>\n\n        <button class=\"creditadded btn-ok\" type=\"submit\" formaction=\"/admin\">add credit</button>\n        <div><p class=\"error\" th:unless=\"${#strings.isEmpty(message)}\" th:text=\"${message}\"></p></div>\n\n\n    </form>\n\n<form class=\"table\" id=\"table-styling\" method=\"post\">\n    <table class=\"task-table\">\n        <thead>\n        <tr>\n            <th>Orderline ID</th>\n            <th>Orderline Quantity</th>\n            <th>Orderline Price</th>\n            <th>Email</th>\n        </tr>\n        </thead>\n        <tbody>\n        <tr th:each=\"orderline: ${session.orderlines}\">\n            <td th:text=\"${orderline.orderlineId}\"></td>\n            <td th:text=\"${orderline.quantity}\"></td>\n            <td th:text=\"${orderline.price}\"></td>\n            <td th:text=\"${orderline.email}\"></td>\n        </tr>\n        </tbody>\n    </table>\n</form>\n</div>\n\n</body>\n</html>\n
+===================================================================
+diff --git a/target/classes/templates/admin.html b/target/classes/templates/admin.html
+--- a/target/classes/templates/admin.html	
++++ b/target/classes/templates/admin.html	
+@@ -4,16 +4,20 @@
+     <meta charset="UTF-8">
+     <title>Admin</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <link href="../public/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet"/>
++    <link href="../public/css/adminstyling.css" th:href="@{/css/adminstyling.css}" rel="stylesheet"/>
+ </head>
+ <body>
+ 
++<div class="orange-border"></div>
++<div class="light-orange-border"></div>
++<div class="pink-border"></div>
+ 
+ 
+ <div class="page">
+-    <a href="../login.html" th:href="@{/login}">
++
++    <a href="../createacupcake.html" th:href="@{/}">
+         <img alt="logo" src="../public/images/Olsker_logo.png"
+-             th:src="@{/images/Olsker_logo.png} " width="20%/>
++             th:src="@{/images/Olsker_logo.png} " width="20%"/>
+     </a>
+ 
+     <form class="generic-form"  method="post">
+@@ -22,17 +26,16 @@
+ 
+         <button class="creditadded btn-ok" type="submit" formaction="/admin">add credit</button>
+         <div><p class="error" th:unless="${#strings.isEmpty(message)}" th:text="${message}"></p></div>
+-
+-
+     </form>
+-
++    </div>
++    </div>
+ <form class="table" id="table-styling" method="post">
+     <table class="task-table">
+         <thead>
+         <tr>
+-            <th>Orderline ID</th>
+-            <th>Orderline Quantity</th>
+-            <th>Orderline Price</th>
++            <th>ID</th>
++            <th>Quantity</th>
++            <th>Price</th>
+             <th>Email</th>
+         </tr>
+         </thead>
+@@ -43,10 +46,13 @@
+             <td th:text="${orderline.price}"></td>
+             <td th:text="${orderline.email}"></td>
+         </tr>
++
+         </tbody>
+     </table>
+ </form>
+ </div>
+ 
++
++
+ </body>
+ </html>
+Index: target/classes/templates/login.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:th=\"http://www.thymeleaf.org\">\n\n<title>Frontpage</title>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<link href=\"../public/css/styles.css\" th:href=\"@{/css/styles.css}\" rel=\"stylesheet\"/>\n</head>\n\n<body>\n\n\n<td>\n    <div th:if=\"${session.currentUser != null}\">\n        <div th:text=\"${session.currentUser.email}\"></div>\n    </div>\n\n    <div th:unless=\"${session.currentUser != null}\">\n        <button class=\"btn btn-ok\" type=\"submit\" formaction=\"/login\">Login</button>\n    </div>\n</td>\n\n<div class=\"page\">\n    <header>\n        <a href=\"index.html\" th:href=\"@{/}\">\n            <img alt=\"logo\" src=\"../public/images/Olsker_logo.png\" th:src=\"@{/images/bro.jpg}\" width=\"20%\"/>\n        </a>\n    </header>\n\n\n\n    <form class=\"generic-form\" method=\"post\">\n        <input type=\"text\" name=\"email\" placeholder=\"Enter your username\"/>\n        <input type=\"password\" name=\"password\" placeholder=\"Enter your password\"/>\n        <button class=\"btn btn-ok\" type=\"submit\" formaction=\"/login\">Login</button>\n        <div><p class=\"error\" th:unless=\"${#strings.isEmpty(message)}\" th:text=\"${message}\"></p></div>\n    </form>\n\n\n</div>\n</body>\n</html>\n
+===================================================================
+diff --git a/target/classes/templates/login.html b/target/classes/templates/login.html
+--- a/target/classes/templates/login.html	
++++ b/target/classes/templates/login.html	
+@@ -4,39 +4,45 @@
+ <title>Frontpage</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-<link href="../public/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet"/>
++<link href="../public/css/login.css" th:href="@{/css/login.css}" rel="stylesheet"/>
+ </head>
+-
+-<body>
++<div class="flexbox-container">
++    <body>
+ 
++    <div class="flexbox-item flexbox-item-header">
++<header>
++    <a  href="createacupcake.html" th:href="@{createacupcake.html}">
++        <img class="picture" alt="logo" src="../public/images/Olsker_logo.png" th:src="@{/images/Olsker_logo.png}" />
++    </a>
++    <div class="orange-border"></div>
++    <div class="light-orange-border"></div>
++    <div class="pink-border"></div>
+ 
+-<td>
+-    <div th:if="${session.currentUser != null}">
+-        <div th:text="${session.currentUser.email}"></div>
+-    </div>
++    <td>
++        <div th:if="${session.currentUser != null}">
++            <div th:text="${session.currentUser.email}"></div>
++        </div>
+ 
+-    <div th:unless="${session.currentUser != null}">
+-        <button class="btn btn-ok" type="submit" formaction="/login">Login</button>
+-    </div>
+-</td>
++        <div th:unless="${session.currentUser != null}">
++            <button class="btn-btn1" type="submit" formaction="/login">Login</button>
++        </div>
++    </td>
++</header>
++</div>
+ 
++    <div class="flexbox-item flexbox-item-input">
+ <div class="page">
+-    <header>
+-        <a href="index.html" th:href="@{/}">
+-            <img alt="logo" src="../public/images/Olsker_logo.png" th:src="@{/images/bro.jpg}" width="20%"/>
+-        </a>
+-    </header>
+-
+-
+ 
+     <form class="generic-form" method="post">
+         <input type="text" name="email" placeholder="Enter your username"/>
+         <input type="password" name="password" placeholder="Enter your password"/>
+-        <button class="btn btn-ok" type="submit" formaction="/login">Login</button>
++        <button class="btn-btn1" type="submit" formaction="/login">Login</button>
+         <div><p class="error" th:unless="${#strings.isEmpty(message)}" th:text="${message}"></p></div>
+     </form>
+ 
++</div>
+ 
+ </div>
+ </body>
++</div>
+ </html>
+Index: target/classes/public/css/cart.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/* Stylesheet for the application */\n\nh1 {\n    color: #369;\n    font-family: Arial, Helvetica, sans-serif;\n    font-size: 3rem;\n}\n\nbody, html {\n    height: 100%;\n    margin: 0;\n    background-color: #54037A;\n}\n\n.container {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    height: 100vh;\n}\n\n.centered-dropdowns {\n    text-align: center;\n}\n\n.centered-dropdowns select {\n    width: 300px;\n    padding: 10px;\n    margin: 5px auto;\n    border: 1px solid #ccc;\n    border-radius: 4px;\n    box-sizing: border-box;\n}\n\n/* Increase button size */\n.submit-container input[type=\"submit\"] {\n    padding: 15px 30px; /* Adjust padding as needed */\n    font-size: 18px; /* Adjust font size as needed */\n}\n\n.dropdown-container {\n    display: flex;\n    align-items: center;\n    justify-content: center; /* Horizontally center the dropdowns */\n}\n\n.Vælg-antal select {\n    margin-left: 50px; /* Adjust as needed */\n}\n\n.submit-container {\n    margin-top: 50px; /* Adjust as needed */\n}\n\n.orange-border {\n    border-top: 30px solid #F06C41;\n    width: 100%;\n}\n\n.light-orange-border {\n    border-top: 30px solid #E68C52;\n    width: 100%;\n}\n\n.pink-border {\n    border-top: 30px solid #CA4267;\n    width: 100%;\n}\n\n.edit-item-form {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    width: 400px;\n    gap: 10px;\n}\n\n.edit-item-form input {\n    padding: 5px;\n    border-radius: 5px;\n}\n\n.btn {\n    padding: 10px;\n    border-radius: 5px;\n    background-color: #CA4267;\n    color: white;\n    font-size: 1.2rem;\n    cursor: pointer;\n    margin-top: 20px;\n}\n\n/* BOXES*/\n\n.large-box {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n}\n\n\n.add-item {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n}\n\n.add-item-1 {\n    display: flex;\n    flex-direction: column;\n}\n\n.add-item-2 {\n    display: flex;\n    flex-direction: column;\n}\n\n\n.scrollable-table {\n    width: 100%;\n    height: 200px;\n    overflow-y: auto;\n    border: 1px solid #F06C41;\n}\n\ntable {\n    width: 100%;\n    border-collapse: collapse;\n}\n\nth, td {\n    text-align: left;\n    padding: 8px;\n    border: 1px solid #CA4267;\n}\n\nth {\n    background-color: #F06C41;\n}\n\n#table-styling {\n    font-family: Arial, Helvetica, sans-serif;\n    border-collapse: collapse;\n    width: 100%;\n}\n\n#table-styling td, #table-styling th {\n    border: 1px solid #CA4267;\n    padding: 8px;\n}\n\n#table-styling tr:nth-child(even) {\n    background-color: #f2f2f2;\n}\n\n#table-styling tr:hover {\n    background-color: #E68C52\n}\n\n#table-styling th {\n    padding-top: 12px;\n    padding-bottom: 12px;\n    text-align: left;\n    background-color: #F06C41;\n    color: white;\n}\n\n.buy-login {\n    position: absolute;\n    left: 90%;\n    color: white;\n}\n.sum{\nposition: relative;\n    left: 90%;\n    color: white;\n}\n
+===================================================================
+diff --git a/target/classes/public/css/cart.css b/target/classes/public/css/cart.css
+--- a/target/classes/public/css/cart.css	
++++ b/target/classes/public/css/cart.css	
+@@ -125,6 +125,7 @@
+ }
+ 
+ table {
++    position: relative;
+     width: 100%;
+     border-collapse: collapse;
+ }
+@@ -166,13 +167,33 @@
+     color: white;
+ }
+ 
+-.buy-login {
+-    position: absolute;
++.email-login-button {
++    display: flex;
++    position: absolute; /* Change to absolute positioning */
+     left: 90%;
+-    color: white;
++    top: 10%;
++    transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+ }
+-.sum{
+-position: relative;
++
++.flex-box-sum-buy{
++    display: flex;
++    flex-direction: column;
++}
++
++.sum {
++    display: flex;
++    position: absolute; /* Change to absolute positioning */
++    left: 90%;
++    top: 40%;
++    transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
++}
++
++.buy-login {
++    display: flex;
++    position: absolute; /* Change to absolute positioning */
+     left: 90%;
++    top: 50%;
++    transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+     color: white;
+ }
++
+Index: target/classes/public/css/styles.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/* Stylesheet for the application */\n\nh1 {\n    color: #369;\n    font-family: Arial, Helvetica, sans-serif;\n    font-size: 3rem;\n}\nbody, html {\n    height: 100%;\n    margin: 0;\nbackground-color: #54037A;\n}\n\n.container {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    height: 100vh;\n}\n\n.centered-dropdowns {\n    text-align: center;\n}\n\n.centered-dropdowns select {\n    width: 300px;\n    padding: 10px;\n    margin: 5px auto;\n    border: 1px solid #ccc;\n    border-radius: 4px;\n    box-sizing: border-box;\n}\n\n/* Increase button size */\n.submit-container input[type=\"submit\"] {\n    padding: 15px 30px; /* Adjust padding as needed */\n    font-size: 18px; /* Adjust font size as needed */\n}\n\n.dropdown-container {\n    display: flex;\n    align-items: center;\n    justify-content: center; /* Horizontally center the dropdowns */\n}\n\n.Vælg-antal select {\n    margin-left: 50px; /* Adjust as needed */\n}\n\n.submit-container {\n    margin-top: 50px; /* Adjust as needed */\n}\n.orange-border {\n    border-top: 30px solid #F06C41;\n    width: 100%;\n}\n\n.light-orange-border {\n    border-top: 30px solid  #E68C52;\n    width: 100%;\n}\n\n.pink-border {\n    border-top: 30px solid #CA4267;\n    width: 100%;\n}\n
+===================================================================
+diff --git a/target/classes/public/css/styles.css b/target/classes/public/css/styles.css
+--- a/target/classes/public/css/styles.css	
++++ b/target/classes/public/css/styles.css	
+@@ -5,63 +5,5 @@
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 3rem;
+ }
+-body, html {
+-    height: 100%;
+-    margin: 0;
+-background-color: #54037A;
+-}
+-
+-.container {
+-    display: flex;
+-    flex-direction: column;
+-    justify-content: center;
+-    align-items: center;
+-    height: 100vh;
+-}
+-
+-.centered-dropdowns {
+-    text-align: center;
+-}
+-
+-.centered-dropdowns select {
+-    width: 300px;
+-    padding: 10px;
+-    margin: 5px auto;
+-    border: 1px solid #ccc;
+-    border-radius: 4px;
+-    box-sizing: border-box;
+-}
+ 
+-/* Increase button size */
+-.submit-container input[type="submit"] {
+-    padding: 15px 30px; /* Adjust padding as needed */
+-    font-size: 18px; /* Adjust font size as needed */
+-}
+ 
+-.dropdown-container {
+-    display: flex;
+-    align-items: center;
+-    justify-content: center; /* Horizontally center the dropdowns */
+-}
+-
+-.Vælg-antal select {
+-    margin-left: 50px; /* Adjust as needed */
+-}
+-
+-.submit-container {
+-    margin-top: 50px; /* Adjust as needed */
+-}
+-.orange-border {
+-    border-top: 30px solid #F06C41;
+-    width: 100%;
+-}
+-
+-.light-orange-border {
+-    border-top: 30px solid  #E68C52;
+-    width: 100%;
+-}
+-
+-.pink-border {
+-    border-top: 30px solid #CA4267;
+-    width: 100%;
+-}

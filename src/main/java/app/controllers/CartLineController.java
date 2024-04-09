@@ -97,6 +97,7 @@ public class CartLineController {
                 }
                 ctx.render("recept.html");
             }
+            System.out.println("fejlkode");
         } catch (SQLException | DatabaseException e) {
             throw new DatabaseException("Database error.");
         }
