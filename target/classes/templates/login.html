@@ -4,39 +4,45 @@
 <title>Frontpage</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="../public/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet"/>
+<link href="../public/css/login.css" th:href="@{/css/login.css}" rel="stylesheet"/>
 </head>
+<div class="flexbox-container">
+    <body>
 
-<body>
+    <div class="flexbox-item flexbox-item-header">
+<header>
+    <a  href="createacupcake.html" th:href="@{createacupcake.html}">
+        <img class="picture" alt="logo" src="../public/images/Olsker_logo.png" th:src="@{/images/Olsker_logo.png}" />
+    </a>
+    <div class="orange-border"></div>
+    <div class="light-orange-border"></div>
+    <div class="pink-border"></div>
 
+    <td>
+        <div th:if="${session.currentUser != null}">
+            <div th:text="${session.currentUser.email}"></div>
+        </div>
 
-<td>
-    <div th:if="${session.currentUser != null}">
-        <div th:text="${session.currentUser.email}"></div>
-    </div>
+        <div th:unless="${session.currentUser != null}">
+            <button class="btn-btn1" type="submit" formaction="/login">Login</button>
+        </div>
+    </td>
+</header>
+</div>
 
-    <div th:unless="${session.currentUser != null}">
-        <button class="btn btn-ok" type="submit" formaction="/login">Login</button>
-    </div>
-</td>
-
+    <div class="flexbox-item flexbox-item-input">
 <div class="page">
-    <header>
-        <a href="index.html" th:href="@{/}">
-            <img alt="logo" src="../public/images/Olsker_logo.png" th:src="@{/images/bro.jpg}" width="20%"/>
-        </a>
-    </header>
-
-
 
     <form class="generic-form" method="post">
         <input type="text" name="email" placeholder="Enter your username"/>
         <input type="password" name="password" placeholder="Enter your password"/>
-        <button class="btn btn-ok" type="submit" formaction="/login">Login</button>
+        <button class="btn-btn1" type="submit" formaction="/login">Login</button>
         <div><p class="error" th:unless="${#strings.isEmpty(message)}" th:text="${message}"></p></div>
     </form>
 
+</div>
 
 </div>
 </body>
+</div>
 </html>
