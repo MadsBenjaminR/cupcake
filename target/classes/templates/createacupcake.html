@@ -8,26 +8,27 @@
 </head>
 <body>
 
+
 <td>
     <div th:if="${session.currentUser != null}">
         <p th:text="${session.currentUser.email}"></p>
-        <div class="orange-border"></div>
     </div>
 
     <div th:unless="${session.currentUser != null}">
         <form class="generic form" method="get">
             <div class="button">
             <button class="loginbutton" type="submit" formaction="/index" >Login</button>
-            <div class="orange-border"></div>
+
 
         </div>
         </form>
     </div>
 </td>
+<div class="orange-border"></div>
 <div class="light-orange-border"></div>
 <div class="pink-border"></div>
 
-<img class="picture" alt="logo" src="../../resources/public/images/Olsker_logo.png" th:src="@{/images/Olsker_logo.png}"/>
+<img class="logo" alt="logo" src="../../resources/public/images/Olsker_logo.png" th:src="@{/images/Olsker_logo.png}"/>
 <div class="container">
     <form id="dropdowns" method="post">
         <div class="dropdown-container">

@@ -33,22 +33,27 @@ body, html {
 .orange-border {
     border-top: 35px solid #F06C41;
     width: 100%;
-    margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .light-orange-border {
-    border-top: 35px solid #E68C52;
-    justify-content: space-around;
+    border-top: 35px solid  #E68C52;
     width: 100%;
+    justify-content: space-around;
     margin-bottom: 10px;
 }
 
 .pink-border {
     border-top: 35px solid #CA4267;
-    justify-content: space-between;
     width: 100%;
+    justify-content: space-between;
     margin-bottom: 10px;
+}
+.logo{
+    top: 1px;
+    height: auto;
+    width: 172px;
+    position: absolute;
 }
 
 @media only screen and (max-width: 600px) {
