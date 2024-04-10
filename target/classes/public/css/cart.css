@@ -51,11 +51,13 @@ body, html {
 }
 
 .light-orange-border {
+    margin-top: 18px;
     border-top: 30px solid #E68C52;
     width: 100%;
 }
 
 .pink-border {
+    margin-top: 18px;
     border-top: 30px solid #CA4267;
     width: 100%;
 }
@@ -104,12 +106,14 @@ body, html {
 }
 
 table {
-    position: relative;
+    margin-top: 300px;
+    justify-content: space-between;
     width: 100%;
     border-collapse: collapse;
 }
 
 th, td {
+    color: white;
     text-align: left;
     padding: 8px;
     border: 1px solid #CA4267;
@@ -119,6 +123,19 @@ th {
     background-color: #F06C41;
 }
 
+table {
+    justify-content: space-between;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #E68C52;
+}
+
+
 #table-styling {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
@@ -126,32 +143,23 @@ th {
 }
 
 #table-styling td, #table-styling th {
-    border: 1px solid #CA4267;
+    border: 1px solid #E68C52;
     padding: 8px;
 }
 
-#table-styling tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
 
-#table-styling tr:hover {
-    background-color: #E68C52
-}
+#table-styling tr:hover {background-color: rgba(226, 96, 38, 0.66);}
 
 #table-styling th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
     background-color: #F06C41;
-    color: white;
 }
-
 .email-login-button {
-    display: flex;
-    position: absolute; /* Change to absolute positioning */
-    left: 90%;
-    top: 10%;
-    transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+    position: absolute;
+    margin-left: 1410px;
+    margin-top: 7px;
 }
 
 .flex-box-sum-buy{
@@ -160,7 +168,7 @@ th {
 }
 
 .sum {
-    display: flex;
+    color: white;
     position: absolute; /* Change to absolute positioning */
     left: 90%;
     top: 40%;

@@ -16,18 +16,12 @@ body, html {
 .table{
     color: white;
 }
-.picture-logo{
-    margin-top: -10px;
-    top: 21px;
+.logo{
+
+    top: 1px;
     height: auto;
-    width: 171px;
-    margin-left: -733px;
+    width: 172px;
     position: absolute;
-
-}
-
-.table{
-    justify-content: space-between;
 }
 
 .orange-border {
@@ -49,12 +43,7 @@ body, html {
     justify-content: space-between;
     margin-bottom: 10px;
 }
-.logo{
-    top: 1px;
-    height: auto;
-    width: 172px;
-    position: absolute;
-}
+
 
 @media only screen and (max-width: 600px) {
     .page {
@@ -63,6 +52,7 @@ body, html {
 }
 
 table {
+    justify-content: space-between;
     width: 100%;
     border-collapse: collapse;
 }

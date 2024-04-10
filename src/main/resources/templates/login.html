@@ -14,7 +14,7 @@
     <div class="flexbox-item flexbox-item-header">
         <header>
             <a href="createacupcake.html" th:href="@{createacupcake.html}">
-                <img class="picture" alt="logo" src="../public/images/Olsker_logo.png" th:src="@{/images/Olsker_logo.png}" />
+                <img class="logo" alt="logo" src="../public/images/Olsker_logo.png" th:src="@{/images/Olsker_logo.png}" />
             </a>
             <div class="email-login-button" th:if="${session.currentUser != null}">
                 <div th:text="${session.currentUser.email}"></div>
