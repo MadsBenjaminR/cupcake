@@ -8,7 +8,6 @@ import app.persistence.OrderlineMapper;
 import io.javalin.Javalin;
 import io.javalin.http.Context;
 
-import javax.xml.crypto.Data;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +18,7 @@ public class CartLineController {
     public static void addRoutes(Javalin app, ConnectionPool connectionPool) {
         app.get("/", ctx -> createACupcake(ctx, connectionPool));
         app.post("/cart", ctx -> CartLineController.orderLineSum(ctx, connectionPool));
-        app.post("/pay", ctx -> CartLineController.insertInhistory(ctx, connectionPool));
+        app.post("/pay", ctx -> CartLineController.insertIntoOrderline(ctx, connectionPool));
 
 
     }
@@ -83,7 +82,7 @@ public class CartLineController {
 
     }
 
-    public static void insertInhistory(Context ctx, ConnectionPool connectionPool) throws DatabaseException {
+    public static void insertIntoOrderline(Context ctx, ConnectionPool connectionPool) throws DatabaseException {
         try {
             User user = ctx.sessionAttribute("currentUser");
             List<CartLine> allCartlines = Cart.getCartLines();
@@ -93,7 +92,7 @@ public class CartLineController {
             if (result) {
                 int orderId = OrderlineMapper.makeAnOrder(totalsum, user, connectionPool);
                 for (CartLine allline : allCartlines) {
-                    OrderlineMapper.inSertOrderHistory(allline.getTotal(), orderId, allline.getQuantity(), allline.getTop().getId(), allline.getBottom().getId(), connectionPool);
+                    OrderlineMapper.insertIntoOrderline(allline.getTotal(), orderId, allline.getQuantity(), allline.getTop().getId(), allline.getBottom().getId(), connectionPool);
                 }
                 ctx.render("recept.html");
             }

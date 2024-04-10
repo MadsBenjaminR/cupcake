@@ -31,7 +31,7 @@ public class OrderlineMapper {
                 int price = rs.getInt("orderline_price");
                 int orderlineId = rs.getInt("orderline_id");
                 String email = rs.getString("email");
-                Orderline orderline = new Orderline(orderlineId,price,quantity, email);
+                Orderline orderline = new Orderline(orderlineId,quantity,price, email);
                 orderlines.add(orderline);
             }
 
@@ -112,7 +112,7 @@ public class OrderlineMapper {
     }
 
 
-    public static void inSertOrderHistory(int pricePrUnit, int orderId, int quantity, int topId, int bottomId, ConnectionPool connectionPool) throws DatabaseException {
+    public static void insertIntoOrderline(int pricePrUnit, int orderId, int quantity, int topId, int bottomId, ConnectionPool connectionPool) throws DatabaseException {
 
         String sql = "INSERT INTO public.orderline (quantity, price, order_id, bottom_id, top_id) VALUES ( ?, ?, ?, ?, ?)";
 
