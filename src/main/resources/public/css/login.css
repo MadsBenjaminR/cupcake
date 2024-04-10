@@ -1,4 +1,3 @@
-
 /*
 baggrund
  */
@@ -7,16 +6,17 @@ baggrund
     display: flex;
 }
 
-
-body{
-
-}
-
-
-body{
+body {
+    color: white;
     height: 100%;
     margin: 0;
     background-color: #54037A;
+}
+
+.email-login-button{
+    position: absolute;
+    margin-left: 1410px;
+    margin-top: 7px;
 }
 
 /*
@@ -29,7 +29,7 @@ REGNBUE
 }
 
 .light-orange-border {
-    border-top: 35px solid  #E68C52;
+    border-top: 35px solid #E68C52;
     width: 100%;
     justify-content: space-around;
     margin-bottom: 10px;
@@ -50,7 +50,7 @@ REGNBUE
 }
 
 
-.btn-btn1{
+.btn-btn1 {
     background-color: #CA4267;
     color: white;
     border: 2px solid #CA4267;
