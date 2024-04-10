@@ -13,7 +13,7 @@
 <div class="light-orange-border"></div>
 <div class="pink-border"></div>
 
-<img class="picture" alt="logo" src="../../resources/public/images/Olsker_logo.png" width="20%"/>
+<img class="picture" alt="logo" src="../../resources/public/images/Olsker_logo.png" th:src="@{/images/Olsker_logo.png}"/>
 
 <div class="email-login-button">
     <div th:if="${session.currentUser != null}">
@@ -43,30 +43,32 @@
             <td th:text="${item.Bottom.name}"></td>
             <td th:text="${item.Top.name}"></td>
             <td th:text="${item.quantity}"></td>
+            <td th:text="${session.sum}" id="sumText"></td>
         </tr>
         </tbody>
     </table>
 
 
-<div class="flex-box-sum-buy">
-    <div class="sum">
-        <button th:text="${session.sum}" id="sumText"></button>
-         <p th:text="${session.totalitems}" id="sumTextt"></p>
-    </div>
+    <div class="flex-box-sum-buy">
+        <div class="sum">
 
-    <div class="buy-login">
-        <div class="buy-button">
-            <div th:if="${session.currentUser != null}">
-                <button class="payButton" type="submit" name="pay" formaction="/pay">Pay using wallet</button>
-            </div>
+            <p th:text="${session.totalitems}" id="sumTextt"></p>
         </div>
-        <div class="need-login-text">
-            <div th:unless="${session.currentUser != null}" class="logInToPurchase">
-                <p>You need to log in to make a purchase</p>
+
+
+        <div class="buy-login">
+            <div class="buy-button">
+                <div th:if="${session.currentUser != null}">
+                    <button class="payButton" type="submit" name="pay" formaction="/pay">Pay using wallet</button>
+                </div>
+            </div>
+            <div class="need-login-text">
+                <div th:unless="${session.currentUser != null}" class="logInToPurchase">
+                    <p>You need to log in to make a purchase</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </form>
 </body>
 </html>

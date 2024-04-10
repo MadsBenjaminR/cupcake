@@ -67,7 +67,6 @@ body, html {
     height: auto;
     width: 172px;
     position: absolute;
-
 }
 .loginbutton {
     position: absolute;
@@ -81,7 +80,6 @@ body, html {
     font-size: 12px;
     padding: 12px 28px;
     border-radius: 12px;
-
 }
 
 
