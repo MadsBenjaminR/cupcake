@@ -15,41 +15,45 @@
 
 <div class="page">
 
-    <a href="../createacupcake.html" th:href="@{/}">
-        <img alt="logo" src="../public/images/Olsker_logo.png"
-             th:src="@{/images/Olsker_logo.png} " width="20%"/>
-    </a>
+    <div>
+        <a href="../templates/createacupcake.html" th:href="@{/}">
+            <img class="picture-logo" alt="logo" src="../public/images/Olsker_logo.png" th:src="@{/images/Olsker_logo.png}"/>
+        </a>
 
-    <form class="generic-form"  method="post">
-        <input type="text" name="balance" placeholder="add credit"/>
-        <input type="text" name="email" placeholder="who gets the credit?"/>
+    </div>
+    <div class="container">
+        <div class="creditcontainer">
 
-        <button class="creditadded btn-ok" type="submit" formaction="/admin">add credit</button>
-        <div><p class="error" th:unless="${#strings.isEmpty(message)}" th:text="${message}"></p></div>
+            <form class="generic-form"  method="post">
+                <input type="text" name="balance" placeholder="add credit"/>
+                <input type="text" name="email" placeholder="who gets the credit?"/>
+
+                <button class="creditadded btn-ok" type="submit" formaction="/admin">add credit</button>
+                <div><p class="error" th:unless="${#strings.isEmpty(message)}" th:text="${message}"></p></div>
+            </form>
+        </div>
+    </div>
+    <form class="table" id="table-styling" method="post">
+        <table class="task-table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Email</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="orderline: ${session.orderlines}">
+                <td th:text="${orderline.orderlineId}"></td>
+                <td th:text="${orderline.quantity}"></td>
+                <td th:text="${orderline.price}"></td>
+                <td th:text="${orderline.email}"></td>
+            </tr>
+
+            </tbody>
+        </table>
     </form>
-    </div>
-    </div>
-<form class="table" id="table-styling" method="post">
-    <table class="task-table">
-        <thead>
-        <tr>
-            <th>ID</th>
-            <th>Quantity</th>
-            <th>Price</th>
-            <th>Email</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr th:each="orderline: ${session.orderlines}">
-            <td th:text="${orderline.orderlineId}"></td>
-            <td th:text="${orderline.quantity}"></td>
-            <td th:text="${orderline.price}"></td>
-            <td th:text="${orderline.email}"></td>
-        </tr>
-
-        </tbody>
-    </table>
-</form>
 </div>
 
 
