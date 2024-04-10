@@ -1,48 +1,40 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-
-<title>Frontpage</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="../public/css/login.css" th:href="@{/css/login.css}" rel="stylesheet"/>
+<head>
+    <title>Frontpage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../public/css/login.css" th:href="@{/css/login.css}" rel="stylesheet"/>
 </head>
+<body>
+<div class="orange-border"></div>
+<div class="light-orange-border"></div>
+<div class="pink-border"></div>
 <div class="flexbox-container">
-    <body>
-
     <div class="flexbox-item flexbox-item-header">
-<header>
-    <a  href="createacupcake.html" th:href="@{createacupcake.html}">
-        <img class="picture" alt="logo" src="../public/images/Olsker_logo.png" th:src="@{/images/Olsker_logo.png}" />
-    </a>
-    <div class="orange-border"></div>
-    <div class="light-orange-border"></div>
-    <div class="pink-border"></div>
+        <header>
+            <a href="createacupcake.html" th:href="@{createacupcake.html}">
+                <img class="picture" alt="logo" src="../public/images/Olsker_logo.png" th:src="@{/images/Olsker_logo.png}" />
+            </a>
+            <div class="email-login-button" th:if="${session.currentUser != null}">
+                <div th:text="${session.currentUser.email}"></div>
+            </div>
 
-    <td>
-        <div th:if="${session.currentUser != null}">
-            <div th:text="${session.currentUser.email}"></div>
-        </div>
+        </header>
+    </div>
+</div>
 
-        <div th:unless="${session.currentUser != null}">
+
+
+<div class="flexbox-item flexbox-item-input">
+    <div class="page">
+        <form class="generic-form" method="post">
+            <input type="text" name="email" placeholder="Enter your username"/>
+            <input type="password" name="password" placeholder="Enter your password"/>
             <button class="btn-btn1" type="submit" formaction="/login">Login</button>
-        </div>
-    </td>
-</header>
-</div>
-
-    <div class="flexbox-item flexbox-item-input">
-<div class="page">
-
-    <form class="generic-form" method="post">
-        <input type="text" name="email" placeholder="Enter your username"/>
-        <input type="password" name="password" placeholder="Enter your password"/>
-        <button class="btn-btn1" type="submit" formaction="/login">Login</button>
-        <div><p class="error" th:unless="${#strings.isEmpty(message)}" th:text="${message}"></p></div>
-    </form>
-
-</div>
-
+            <div><p class="error" th:unless="${#strings.isEmpty(message)}" th:text="${message}"></p></div>
+        </form>
+    </div>
 </div>
 </body>
-</div>
 </html>

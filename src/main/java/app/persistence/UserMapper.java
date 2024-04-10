@@ -28,7 +28,7 @@ public class UserMapper {
                 int balance = rs.getInt("balance");
                 return new User(userId,email,password, role, balance);
             } else {
-                throw new DatabaseException("fejl i login. Prøv igen");
+                throw new DatabaseException("");
             }
         } catch (SQLException e) {
             throw new DatabaseException("DB fejl", e.getMessage());

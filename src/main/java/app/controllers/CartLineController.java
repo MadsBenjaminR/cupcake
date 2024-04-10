@@ -19,6 +19,7 @@ public class CartLineController {
         app.get("/", ctx -> createACupcake(ctx, connectionPool));
         app.post("/cart", ctx -> CartLineController.orderLineSum(ctx, connectionPool));
         app.post("/pay", ctx -> CartLineController.insertIntoOrderline(ctx, connectionPool));
+        app.post("/createacupcake", ctx -> createACupcake(ctx, connectionPool));
 
 
     }

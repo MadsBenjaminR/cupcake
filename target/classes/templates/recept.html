@@ -2,13 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link href="../public/css/login.css" th:href="@{/css/login.css}" rel="stylesheet"/>
+    <title></title>
 </head>
 <body>
+<div class="orange-border"></div>
+<div class="light-orange-border"></div>
+<div class="pink-border"></div>
 
+<div class="email-login-button" th:if="${session.currentUser != null}">
+    <div th:text="${session.currentUser.email}"></div>
+</div>
 
+<a  href="createacupcake.html" th:href="@{createacupcake.html}">
+    <img class="picture" alt="logo" src="../public/images/Olsker_logo.png" th:src="@{/images/Olsker_logo.png}" />
+</a>
+<h1>Tak for din bestilling!</h1>
+<h2>Du vil modtage en e-mail indeholdende:</h2>
+<h3> - Kvittering for din ordre</h3>
+<h3> - Information om tidspunkter for afhentning</h3>
 
-HEEEYYY
+<form class="generic-form" method="post">
+    <button class="btn-btn1" type="submit" formaction="/createacupcake">Placer endnu en ordre</button>
+</form>
 
 
 </body>
