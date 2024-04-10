@@ -42,40 +42,7 @@ public class OrderlineMapper {
         }
         return orderlines;
     }
-    /*public static boolean deductFromBalance(User user, int totalSum, ConnectionPool connectionPool) {
-        String sql = "SELECT * from users where user_id=?";
-
-        try (
-                Connection connection = connectionPool.getConnection();
-                PreparedStatement ps = connection.prepareStatement(sql);
-        ) {
-
-            ps.setInt(1, user.getUserId());
-            ResultSet rs = ps.executeQuery();
-
-            if (rs.next()) {
-                int currentBalance = rs.getInt("balance");
-                int newBalance = currentBalance - totalSum;
-                if (newBalance < totalSum) {
-                    System.out.println("Insufficient funds!");
-                    return true;
-
-                }else {
-                    String sql02 = "update users set balance=? where user_id=?";
-                    PreparedStatement ps02 = connection.prepareStatement(sql02);
-                    ps02.setInt(1, newBalance);
-                    ps02.setInt(2, user.getUserId());
-                    ps02.executeUpdate();
-                    System.out.println("Balance has been updated");
-                    return false;
-                }
-
-            }
-
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-    }*/
+    
     public static boolean deductFromBalance(User user, int totalSum, ConnectionPool connectionPool) {
         String sql = "SELECT * from users where user_id=?";
 
