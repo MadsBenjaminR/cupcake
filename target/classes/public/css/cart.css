@@ -1,11 +1,3 @@
-/* Stylesheet for the application */
-
-h1 {
-    color: #369;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 3rem;
-}
-
 body, html {
     height: 100%;
     margin: 0;
@@ -66,19 +58,6 @@ body, html {
 .pink-border {
     border-top: 30px solid #CA4267;
     width: 100%;
-}
-
-.edit-item-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 400px;
-    gap: 10px;
-}
-
-.edit-item-form input {
-    padding: 5px;
-    border-radius: 5px;
 }
 
 .btn {
@@ -197,3 +176,9 @@ th {
     color: white;
 }
 
+.logo{
+    top: 1px;
+    height: auto;
+    width: 172px;
+    position: absolute;
+}
