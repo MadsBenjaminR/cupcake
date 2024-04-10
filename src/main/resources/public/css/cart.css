@@ -157,6 +157,7 @@ th, td {
     background-color: #F06C41;
 }
 .email-login-button {
+    color: white;
     position: absolute;
     margin-left: 1410px;
     margin-top: 7px;
