@@ -18,6 +18,7 @@ public class CartLineController {
 
     public static void addRoutes(Javalin app, ConnectionPool connectionPool) {
         app.get("/", ctx -> createACupcake(ctx, connectionPool));
+        app.post("/createacupcake", ctx -> createACupcake(ctx, connectionPool));
         app.post("/cart", ctx -> CartLineController.orderLineSum(ctx, connectionPool));
         app.post("/pay", ctx -> CartLineController.insertInhistory(ctx, connectionPool));
 

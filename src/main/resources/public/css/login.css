@@ -9,8 +9,9 @@ baggrund
 
 
 body{
-
+color: white;
 }
+
 
 
 body{
@@ -70,4 +71,10 @@ input[type=text], [type=password] {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+}
+
+.email-login-button{
+    position: absolute;
+    margin-left: 1410px;
+    margin-top: 7px;
 }
